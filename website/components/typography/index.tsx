@@ -6,7 +6,7 @@ export const NavbarPage = styled(Typography)<{
   fsize?: string
   paddingRight?: string
 }>`
-  font-family: Poppins;
+  font-family: Georama, sans-serif;
   font-size: ${(props) => props.fsize || '22px'};
   font-weight: 500;
   color: ${(props) => props.color || 'black'};
@@ -18,10 +18,11 @@ export const TitlePage = styled(Typography)<{
   color?: string
   textalign?: string
   fsize?: string
+  fontWeight?: string
 }>`
-  font-family: Poppins;
+  font-family: Georama, sans-serif;
   font-size: ${(props) => props.fsize || '22px'};
-  font-weight: 500;
+  font-weight: ${(props) => props.fontWeight || '500'};
   color: ${(props) => props.color || 'black'};
   text-align: ${(props) => props.textalign || 'left'};
 `

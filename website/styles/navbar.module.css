@@ -1,17 +1,25 @@
 .navbar {
   display: flex;
-  background-color: #fff;
+  background-color: #ff3c3c;
+  padding-top: 5px;
   padding-bottom: 10px;
-  box-shadow: 3px 3px 8px 0px rgba(231, 49, 49, 0.5);
+  box-shadow: 5px 5px 15px 0px rgba(27, 26, 26, 0.5);
+}
+
+.logo {
+  filter: brightness(100);
 }
 
 .title {
-  padding-top: 35px;
+  padding-top: 13px;
   padding-left: 20px;
 }
 
-.navbarcontent {
-  margin-left: auto;
-  padding-top: 35px;
-  display: flex;
+.title :hover {
+  cursor: default;
+}
+
+.navbarcontent :hover {
+  border-bottom: 2px white solid;
+  cursor: default;
 }
