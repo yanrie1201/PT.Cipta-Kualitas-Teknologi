@@ -1,10 +1,11 @@
 /* eslint-disable react/jsx-no-duplicate-props */
-import { AccountName, NavbarPage, TitlePage } from "../typography";
-import styles from "../../styles/navbar.module.css";
-import { Avatar, Box, Stack } from "@mui/material";
-import logo from "../../public/images/white_logo-removebg-preview.png";
-import Image from "next/image";
-import { style } from "@mui/system";
+import { AccountName, NavbarPage, TitlePage } from '../typography'
+import styles from '../../styles/navbar.module.css'
+import { Avatar, Box, Stack } from '@mui/material'
+import logo from '../../public/images/white_logo-removebg-preview.png'
+import Image from 'next/image'
+import { style } from '@mui/system'
+import Logo from '../logo/index'
 
 const Navbar = () => {
   return (
@@ -12,27 +13,13 @@ const Navbar = () => {
       {/* {arrow?:(
       <Icon></Icon>
     ):("")} */}
-      <Image
-        className={styles.logo}
-        src={logo}
-        alt="Logo"
-        width={100}
-        height={100}
-      />
-      <div className={styles.title}>
-        <TitlePage fsize="35px" fontWeight="700" color="white">
-          CKT
-        </TitlePage>
-        <TitlePage color="white" fsize="15px" fontWeight="600">
-          PT. Cipta Kualitas Teknologi
-        </TitlePage>
-      </div>
+      <Logo />
       <Box
         sx={{
-          display: "flex",
-          justifyContent: "flex-end",
-          paddingTop: "35px",
-          width: "75%",
+          display: 'flex',
+          justifyContent: 'flex-end',
+          paddingTop: '35px',
+          width: '75%',
         }}
       >
         <Stack direction="row" spacing={3}>
@@ -51,7 +38,7 @@ const Navbar = () => {
         </Stack>
       </Box>
     </div>
-  );
-};
+  )
+}
 
-export default Navbar;
+export default Navbar
