@@ -1,11 +1,18 @@
 .footer {
-  display: block;
+  background-color: #ff4f4f;
 }
-.footerContent {
-  background-color: #ff3b3b;
+.contentfooter {
+  padding-top: 1px;
+  padding-bottom: 30px;
+  display: flex;
+  justify-content: center;
 }
 .logo {
   filter: brightness(100);
+}
+
+.copyright {
+  background-color: #ff3b3b;
 }
 
 .test {
