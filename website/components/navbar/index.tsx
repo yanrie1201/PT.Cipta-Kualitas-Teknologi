@@ -1,10 +1,10 @@
 /* eslint-disable react/jsx-no-duplicate-props */
-import { TextContent, NavbarPage, TitlePage } from '../typography'
-import styles from '../../styles/navbar.module.css'
-import { Avatar, Box, Stack } from '@mui/material'
-import logo from '../../public/images/white_logo-removebg-preview.png'
-import Image from 'next/image'
-import { style } from '@mui/system'
+import { AccountName, NavbarPage, TitlePage } from "../typography";
+import styles from "../../styles/navbar.module.css";
+import { Avatar, Box, Stack } from "@mui/material";
+import logo from "../../public/images/white_logo-removebg-preview.png";
+import Image from "next/image";
+import { style } from "@mui/system";
 
 const Navbar = () => {
   return (
@@ -29,10 +29,10 @@ const Navbar = () => {
       </div>
       <Box
         sx={{
-          display: 'flex',
-          justifyContent: 'flex-end',
-          paddingTop: '35px',
-          width: '75%',
+          display: "flex",
+          justifyContent: "flex-end",
+          paddingTop: "35px",
+          width: "75%",
         }}
       >
         <Stack direction="row" spacing={3}>
@@ -51,7 +51,7 @@ const Navbar = () => {
         </Stack>
       </Box>
     </div>
-  )
-}
+  );
+};
 
-export default Navbar
+export default Navbar;

@@ -1,0 +1,13 @@
+.footer {
+  display: block;
+}
+.footerContent {
+  background-color: #ff3b3b;
+}
+.logo {
+  filter: brightness(100);
+}
+
+.test {
+  height: 600px;
+}
