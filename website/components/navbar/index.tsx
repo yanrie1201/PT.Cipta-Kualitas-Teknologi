@@ -1,5 +1,5 @@
 /* eslint-disable react/jsx-no-duplicate-props */
-import { AccountName, NavbarPage, TitlePage } from '../typography'
+import { TextContent, NavbarPage, TitlePage } from '../typography'
 import styles from '../../styles/navbar.module.css'
 import { Avatar, Box, Stack } from '@mui/material'
 import logo from '../../public/images/white_logo-removebg-preview.png'
