@@ -1,0 +1,17 @@
+.navbar {
+  display: flex;
+  background-color: #fff;
+  padding-bottom: 10px;
+  box-shadow: 3px 3px 8px 0px rgba(231, 49, 49, 0.5);
+}
+
+.title {
+  padding-top: 35px;
+  padding-left: 20px;
+}
+
+.navbarcontent {
+  margin-left: auto;
+  padding-top: 35px;
+  display: flex;
+}
