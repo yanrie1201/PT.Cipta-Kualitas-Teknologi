@@ -1,43 +1,53 @@
-import { styled, Typography } from '@mui/material'
+import { PropaneSharp } from "@mui/icons-material";
+import { styled, Typography } from "@mui/material";
 
 export const NavbarPage = styled(Typography)<{
-  color?: string
-  textalign?: string
-  fsize?: string
-  paddingRight?: string
+  color?: string;
+  textalign?: string;
+  fsize?: string;
+  margin?: string;
+  padding?: string;
 }>`
   font-family: Georama, sans-serif;
-  font-size: ${(props) => props.fsize || '22px'};
+  font-size: ${(props) => props.fsize || "22px"};
   font-weight: 500;
-  color: ${(props) => props.color || 'black'};
-  text-align: ${(props) => props.textalign || 'left'};
-  padding-right: ${(props) => props.paddingRight || '10px'};
-`
+  color: ${(props) => props.color || "black"};
+  text-align: ${(props) => props.textalign || "left"};
+  margin: ${(props) => props.margin || "0"};
+  padding: ${(props) => props.padding || "0"};
+`;
 
 export const TitlePage = styled(Typography)<{
-  color?: string
-  textalign?: string
-  fsize?: string
-  fontWeight?: string
+  color?: string;
+  textalign?: string;
+  fsize?: string;
+  fontWeight?: string;
 }>`
   font-family: Georama, sans-serif;
-  font-size: ${(props) => props.fsize || '22px'};
-  font-weight: ${(props) => props.fontWeight || '500'};
-  color: ${(props) => props.color || 'black'};
-  text-align: ${(props) => props.textalign || 'left'};
-`
+  font-size: ${(props) => props.fsize || "22px"};
+  font-weight: ${(props) => props.fontWeight || "500"};
+  color: ${(props) => props.color || "black"};
+  text-align: ${(props) => props.textalign || "left"};
+`;
 
 export const FooterText = styled(Typography)<{
-  color?: string
-  textalign?: string
-  fsize?: string
-  fontWeight?: string
-  mbottom?: string
+  color?: string;
+  textalign?: string;
+  fsize?: string;
+  fontWeight?: string;
+  mbottom?: string;
 }>`
   font-family: Georama, sans-serif;
-  font-size: ${(props) => props.fsize || '16px'};
-  font-weight: ${(props) => props.fontWeight || '500'};
-  color: ${(props) => props.color || '#fff'};
-  text-align: ${(props) => props.textalign || 'left'};
-  margin-bottom: ${(props) => props.mbottom || '1rem'};
-`
+  font-size: ${(props) => props.fsize || "16px"};
+  font-weight: ${(props) => props.fontWeight || "500"};
+  color: ${(props) => props.color || "#fff"};
+  text-align: ${(props) => props.textalign || "left"};
+  margin-bottom: ${(props) => props.mbottom || "1rem"};
+`;
+
+export const FooterBackground = styled(Typography)<{
+  opacity?: number;
+}>`
+  background-color: ${(props) =>
+    "rgba(255,255,255," + props.opacity + ")" || "inherit"};
+`;

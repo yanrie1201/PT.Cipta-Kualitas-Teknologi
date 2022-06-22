@@ -1,10 +1,6 @@
 .navbar {
-  display: flex;
   background-color: #ff3c3c;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-left: 30px;
-  box-shadow: 5px 5px 15px 0px rgba(27, 26, 26, 0.5);
+  /* box-shadow: 5px 5px 15px 0px rgba(27, 26, 26, 0.5); */
 }
 
 .logo {
@@ -19,8 +15,33 @@
 .title :hover {
   cursor: default;
 }
-
-.navbarcontent :hover {
-  border-bottom: 2px white solid;
-  cursor: default;
+.navbarItems .navbarText {
+  align-self: center;
+  padding: 5px 0;
+}
+.navbarItems .navbarText:hover {
+  cursor: pointer;
+}
+.navbarItems .navbarText,
+.navbarItems .navbarText:after,
+.navbarItems .navbarText:before {
+  transition: all 0.2s;
+}
+.navbarItems .navbarText {
+  position: relative;
+}
+.navbarItems .navbarText:after {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  width: 0%;
+  content: ".";
+  color: transparent;
+  background: rgba(255, 255, 255, 1);
+  height: 2px;
+}
+.navbarItems .navbarText:hover:after {
+  width: 100%;
 }
