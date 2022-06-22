@@ -30,8 +30,8 @@
   margin-right: 0;
 }
 .socials {
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   color: #fff;
 }
 .socials > .socialTitle {
@@ -40,8 +40,8 @@
 .socials > .socialIcon {
 }
 .copyright {
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 .navbarBackgroundTop {
   background-color: rgba(255, 255, 255, 0.2);

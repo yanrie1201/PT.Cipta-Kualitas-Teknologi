@@ -1,11 +1,11 @@
 /* eslint-disable react/jsx-no-duplicate-props */
-import { NavbarPage, TitlePage } from "../typography";
-import styles from "../../styles/navbar.module.css";
-import { Avatar, Box, Container, Grid, Stack } from "@mui/material";
-import logo from "../../public/images/white_logo-removebg-preview.png";
-import Image from "next/image";
-import { style } from "@mui/system";
-import Logo from "../logo/index";
+import { NavbarPage, TitlePage } from '../typography'
+import styles from '../../styles/navbar.module.css'
+import { Avatar, Box, Container, Grid, Stack } from '@mui/material'
+import logo from '../../public/images/white_logo-removebg-preview.png'
+import Image from 'next/image'
+import { style } from '@mui/system'
+import Logo from '../logo/index'
 
 const Navbar = () => {
   return (
@@ -14,32 +14,16 @@ const Navbar = () => {
       <Icon></Icon>
     ):("")} */}
       {/* <Logo /> */}
-      <Container maxWidth="xl">
+      <Container maxWidth="xl" className={styles.navbarcontent}>
         <Grid container md={12}>
           <Grid md={3}>
             <Box
               sx={{
-                display: "flex",
-                justifyContent: "flex-start",
+                display: 'flex',
+                justifyContent: 'flex-start',
               }}
             >
-              <div
-                style={{
-                  width: "8rem",
-                  height: "130px",
-                  position: "relative",
-                }}
-              >
-                <Image className={styles.logo} src={logo} alt="Logo" />
-              </div>
-              <div className={styles.title}>
-                <TitlePage fsize="50px" fontWeight="700" color="white">
-                  CKT
-                </TitlePage>
-                <TitlePage color="white" fsize="15px" fontWeight="600">
-                  PT. Cipta Kualitas Teknologi
-                </TitlePage>
-              </div>
+              <Logo width="160vw" height="80vh" />
             </Box>
           </Grid>
           <Grid container md={9} className={styles.navbarItems}>
@@ -66,7 +50,7 @@ const Navbar = () => {
         </Grid>
       </Container>
     </div>
-  );
-};
+  )
+}
 
-export default Navbar;
+export default Navbar

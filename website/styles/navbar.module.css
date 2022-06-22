@@ -3,6 +3,10 @@
   /* box-shadow: 5px 5px 15px 0px rgba(27, 26, 26, 0.5); */
 }
 
+.navbarcontent {
+  padding: 10px 10px;
+}
+
 .logo {
   filter: brightness(100);
 }
@@ -37,7 +41,7 @@
   bottom: 0;
   margin: auto;
   width: 0%;
-  content: ".";
+  content: '.';
   color: transparent;
   background: rgba(255, 255, 255, 1);
   height: 2px;
