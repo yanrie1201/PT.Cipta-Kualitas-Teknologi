@@ -1,5 +1,5 @@
 /* eslint-disable react/jsx-no-duplicate-props */
-import { FooterBackground, FooterText } from "../typography";
+import { FooterText } from "../typography";
 import styles from "../../styles/footer.module.css";
 import logo from "../../public/images/white_logo-removebg-preview.png";
 import Image from "next/image";
@@ -17,7 +17,7 @@ import Link from "next/link";
 const Footer = () => {
   return (
     <div className={styles.footer}>
-      <FooterBackground opacity={0.2}>
+      <div className={styles.navbarBackgroundTop}>
         <Container maxWidth="xl">
           <Grid
             container
@@ -40,8 +40,8 @@ const Footer = () => {
             </Grid>
           </Grid>
         </Container>
-      </FooterBackground>
-      <FooterBackground opacity={0.1}>
+      </div>
+      <div className={styles.navbarBackgroundMid}>
         <Container maxWidth="xl">
           <Grid
             container
@@ -107,8 +107,8 @@ const Footer = () => {
             </Grid>
           </Grid>
         </Container>
-      </FooterBackground>
-      <FooterBackground>
+      </div>
+      <div className={styles.navbarBackgroundBot}>
         <Container maxWidth="xl">
           <Grid
             container
@@ -121,7 +121,7 @@ const Footer = () => {
             </FooterText>
           </Grid>
         </Container>
-      </FooterBackground>
+      </div>
     </div>
   );
 };

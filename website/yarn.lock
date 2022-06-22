@@ -1959,7 +1959,7 @@ queue-microtask@^1.2.2:
   resolved "https://registry.yarnpkg.com/queue-microtask/-/queue-microtask-1.2.3.tgz#4929228bbc724dfac43e0efb058caf7b6cfb6243"
   integrity sha512-NuaNSa6flKT5JaSYQzJok04JzTL1CA6aGhv5rfLW3PgqA+M2ChpZQnAC8h8i4ZFkBS8X5RqkDBHA7r4hej3K9A==
 
-react-dom@18.2.0:
+react-dom@^18.2.0:
   version "18.2.0"
   resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-18.2.0.tgz#22aaf38708db2674ed9ada224ca4aa708d821e3d"
   integrity sha512-6IMTriUmvsjHUjNtEDudZfuDQUoWXVxKHhlEGSk81n4YFS+r/Kl99wXiwlVXtPBtJenozv2P+hxDsw9eA7Xo6g==
@@ -1999,11 +1999,6 @@ react-transition-group@^4.4.2:
     dom-helpers "^5.0.1"
     loose-envify "^1.4.0"
     prop-types "^15.6.2"
-
-react.dom@^1.0.1:
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/react.dom/-/react.dom-1.0.1.tgz#f0083fd8d7b91a58475cfe4901f7e7f2ec42b3c4"
-  integrity sha512-NLoYpJhyWLPcZAFvzaW8FyLmnwnRLD8tMIFSH1dW0SVVit5jxIapJsPjMWFBXHGyNnZXxMnGv32qlDnLtYJaAg==
 
 react@18.2.0:
   version "18.2.0"

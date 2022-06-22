@@ -44,10 +44,3 @@ export const FooterText = styled(Typography)<{
   text-align: ${(props) => props.textalign || "left"};
   margin-bottom: ${(props) => props.mbottom || "1rem"};
 `;
-
-export const FooterBackground = styled(Typography)<{
-  opacity?: number;
-}>`
-  background-color: ${(props) =>
-    "rgba(255,255,255," + props.opacity + ")" || "inherit"};
-`;

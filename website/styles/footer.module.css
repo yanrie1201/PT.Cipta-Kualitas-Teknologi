@@ -7,11 +7,6 @@
   left: 0;
   right: 0;
 }
-.contentfooter {
-  /* padding-top: 1px;
-  padding-bottom: 30px;
-  display: flex; */
-}
 .logo {
   filter: brightness(100);
   padding: 0;
@@ -47,4 +42,13 @@
 .copyright {
   padding-top: 20px;
   padding-bottom: 20px;
+}
+.navbarBackgroundTop {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+.navbarBackgroundMid {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.navbarBackgroundBot {
+  background-color: #ff3b3b;
 }
