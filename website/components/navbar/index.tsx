@@ -1,26 +1,31 @@
 /* eslint-disable react/jsx-no-duplicate-props */
-import { NavbarPage, TitlePage } from '../typography'
-import styles from '../../styles/navbar.module.css'
-import { Avatar, Box, Container, Grid, Stack } from '@mui/material'
-import logo from '../../public/images/white_logo-removebg-preview.png'
-import Image from 'next/image'
-import { style } from '@mui/system'
-import Logo from '../logo/index'
-
-const Navbar = () => {
+import { NavbarPage, TitlePage } from "../typography";
+import styles from "../../styles/navbar.module.css";
+import { Avatar, Box, Container, Grid, Stack } from "@mui/material";
+import logo from "../../public/images/white_logo-removebg-preview.png";
+import Image from "next/image";
+import { style } from "@mui/system";
+import Logo from "../logo/index";
+interface NavbarProps {
+  setBackgroundColor: string;
+  setPosition: string;
+}
+const Navbar = ({ setBackgroundColor, setPosition }: NavbarProps) => {
   return (
-    <div className={styles.navbar}>
-      {/* {arrow?:(
-      <Icon></Icon>
-    ):("")} */}
+    <Container
+      maxWidth={false}
+      style={{ backgroundColor: setBackgroundColor }}
+      sx={{ position: setPosition }}
+      className={styles.navbar}
+    >
       {/* <Logo /> */}
       <Container maxWidth="xl" className={styles.navbarcontent}>
         <Grid container md={12}>
           <Grid md={3}>
             <Box
               sx={{
-                display: 'flex',
-                justifyContent: 'flex-start',
+                display: "flex",
+                justifyContent: "flex-start",
               }}
             >
               <Logo width="160vw" height="80vh" />
@@ -49,8 +54,8 @@ const Navbar = () => {
           </Grid>
         </Grid>
       </Container>
-    </div>
-  )
-}
+    </Container>
+  );
+};
 
-export default Navbar
+export default Navbar;

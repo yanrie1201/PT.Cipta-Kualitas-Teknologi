@@ -1,28 +1,31 @@
-import styled from 'styled-components'
-import { Button } from '@mui/material'
+import styled from "styled-components";
+import { Button } from "@mui/material";
 
 export const HomeButton = styled(Button)<{
-  width?: string
-  color?: string
-  fsize?: string
-  bgcolor: string
-  borderradius?: string
+  width?: string;
+  color?: string;
+  fsize?: string;
+  fweight?: string;
+  bgcolor?: string;
+  padding?: string;
+  borderradius?: string;
+  margin?: string;
+  textTranform?: string;
 }>`
-  width: ${(props) => props.width || '10%'};
   text-align: center;
-  color: ${(props) => props.color || '#FFF'};
-  font-size: ${(props) => props.fsize || '16px'};
   font-family: Georama, sans-serif;
-  font-weight: 700;
-  text-transform: none;
-  background-color: ${(props) => props.bgcolor || '#ff3c3c'};
-  border-radius: ${(props) => props.borderradius || '20px'};
+  font-weight: ${(props) => props.fweight || "400"};
+  text-transform: ${(props) => props.textTranform || "Capitalize"};
   z-index: 1;
-  opacity: 0.7;
-
+  width: ${(props) => props.width || "100%"};
+  color: ${(props) => props.color || "#FFF"};
+  font-size: ${(props) => props.fsize || "16px"};
+  background-color: ${(props) => props.bgcolor || "#FF3B3B"};
+  border-radius: ${(props) => props.borderradius || "20px"};
+  padding: ${(props) => props.padding || "5px"};
+  margin: ${(props) => props.margin || "5px"};
   &:hover {
-    cursor: default;
-    opacity: 1;
-    background-color: ${(props) => props.bgcolor || '#ff3c3c'};
+    color: ${(props) => props.bgcolor || "#FF3B3B"};
+    background-color: ${(props) => props.color || "#FFF"};
   }
-`
+`;
