@@ -1,11 +1,12 @@
-import { style } from "@mui/system";
-import type { NextPage } from "next";
-import Head from "next/head";
-import Footer from "../components/footer";
-import Navbar from "../components/navbar";
-import styles from "../styles/footer.module.css";
+import { style } from '@mui/system'
+import type { NextPage } from 'next'
+import Head from 'next/head'
+import { HomeButton } from '../components/button'
+import Footer from '../components/footer'
+import Navbar from '../components/navbar'
+import styles from '../styles/footer.module.css'
 
-const pageTitle = "Home";
+const pageTitle = 'Home'
 
 const Home: NextPage = () => {
   return (
@@ -14,11 +15,14 @@ const Home: NextPage = () => {
         <title>{pageTitle} - PT. Cipta Kualitas Teknologi</title>
         <meta name="description" content="PT. Cipta Kualitas Teknologi" />
       </Head>
+
       <Navbar />
-      <div className={styles.test}></div>
+      <div className={styles.test}>
+        <HomeButton bgcolor="">Test</HomeButton>
+      </div>
       <Footer />
     </>
-  );
-};
+  )
+}
 
-export default Home;
+export default Home

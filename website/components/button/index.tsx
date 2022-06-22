@@ -5,23 +5,24 @@ export const HomeButton = styled(Button)<{
   width?: string
   color?: string
   fsize?: string
-  background: string
+  bgcolor: string
   borderradius?: string
 }>`
-  width: ${(props) => props.width || '100%'};
+  width: ${(props) => props.width || '10%'};
   text-align: center;
   color: ${(props) => props.color || '#FFF'};
   font-size: ${(props) => props.fsize || '16px'};
   font-family: Georama, sans-serif;
   font-weight: 700;
   text-transform: none;
-  background-color: ${(props) => props.background || '#ff3c3c'};
+  background-color: ${(props) => props.bgcolor || '#ff3c3c'};
   border-radius: ${(props) => props.borderradius || '20px'};
   z-index: 1;
-  opacity: 0.6;
+  opacity: 0.7;
 
   &:hover {
     cursor: default;
     opacity: 1;
+    background-color: ${(props) => props.bgcolor || '#ff3c3c'};
   }
 `
