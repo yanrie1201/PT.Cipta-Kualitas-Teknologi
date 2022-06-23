@@ -1,5 +1,5 @@
 .navbar {
-  background-color: #ff3c3c;
+  background-color: var(--theme);
   /* box-shadow: 5px 5px 15px 0px rgba(27, 26, 26, 0.5); */
 }
 
@@ -41,9 +41,9 @@
   bottom: 0;
   margin: auto;
   width: 0%;
-  content: '.';
+  content: ".";
   color: transparent;
-  background: rgba(255, 255, 255, 1);
+  background: var(--white);
   height: 2px;
 }
 .navbarItems .navbarText:hover:after {

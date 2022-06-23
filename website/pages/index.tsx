@@ -4,8 +4,13 @@ import Head from "next/head";
 import { HomeButton } from "../components/button";
 import Footer from "../components/footer";
 import Navbar from "../components/navbar";
+import imageSolution_1 from "../public/images/Background/Server 1.jpeg";
+import imageSolution_2 from "../public/images/Background/Server 2.jpeg";
+import imageSolution_3 from "../public/images/Background/Server 1.jpeg";
 import styles from "../styles/home.module.css";
+import { Container, Grid } from "@mui/material";
 
+import Image from "next/image";
 const pageTitle = "Home";
 
 const Home: NextPage = () => {
@@ -17,8 +22,8 @@ const Home: NextPage = () => {
       </Head>
 
       <Navbar setBackgroundColor="transparent" setPosition="absolute" />
-      <div className={styles.home}>
-        <div className={styles.header}>
+      <main className={styles.home}>
+        <section className={styles.header}>
           <div className={styles.overlay}>
             <div className={styles.transition}>
               <div className={styles.titleContainer}>
@@ -29,7 +34,7 @@ const Home: NextPage = () => {
                 </div>
 
                 <HomeButton
-                  padding="20px 50px"
+                  padding="15px 30px"
                   width="fit-content"
                   borderradius="100px"
                   margin="40px 0 0 0"
@@ -41,9 +46,46 @@ const Home: NextPage = () => {
               </div>
             </div>
           </div>
-        </div>
-        <div className={styles.solution}></div>
-      </div>
+        </section>
+        <section className={styles.solutionSection}>
+          <Container maxWidth="xl">
+            <Grid
+              container
+              justifyContent="center"
+              alignItems="center"
+              className={styles.solutionContainer}
+            >
+              <Grid md={12} className={styles.solutionTitle}>
+                Our Best Solution
+              </Grid>
+              <Grid md={3} container className={styles.solutionContent}>
+                <Grid md={12} className={styles.solutionImage}>
+                  <Image src={imageSolution_1} className={styles.image} />
+                </Grid>
+                <Grid md={12} className={styles.solutionName}>
+                  IT Infrastructure
+                </Grid>
+              </Grid>
+              <Grid md={3} container className={styles.solutionContent}>
+                <Grid md={12} className={styles.solutionImage}>
+                  <Image src={imageSolution_2} className={styles.image} />
+                </Grid>
+                <Grid md={12} className={styles.solutionName}>
+                  Network & Security
+                </Grid>
+              </Grid>
+              <Grid md={3} container className={styles.solutionContent}>
+                <Grid md={12} className={styles.solutionImage}>
+                  <Image src={imageSolution_3} className={styles.image} />
+                </Grid>
+                <Grid md={12} className={styles.solutionName}>
+                  Internet of Things
+                </Grid>
+              </Grid>
+            </Grid>
+          </Container>
+        </section>
+      </main>
       <Footer />
     </>
   );

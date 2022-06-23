@@ -1,5 +1,5 @@
 .footer {
-  background-color: #ff3b3b;
+  background-color: var(--theme);
   justify-content: center;
   cursor: default;
   /* position: fixed; */
@@ -27,23 +27,21 @@
 .socials {
   padding-top: 10px;
   padding-bottom: 10px;
-  color: #fff;
+  color: var(--white);
 }
 .socials > .socialTitle {
   align-self: center;
-}
-.socials > .socialIcon {
 }
 .copyright {
   padding-top: 10px;
   padding-bottom: 10px;
 }
 .navbarBackgroundTop {
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: var(--overlay-white-20);
 }
 .navbarBackgroundMid {
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: var(--overlay-white-10);
 }
 .navbarBackgroundBot {
-  background-color: #ff3b3b;
+  background-color: var(--theme);
 }
