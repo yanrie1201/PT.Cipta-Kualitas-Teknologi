@@ -4,9 +4,9 @@ import Head from 'next/head'
 import { HomeButton } from '../components/button'
 import Footer from '../components/footer'
 import Navbar from '../components/navbar'
-import image1 from '../public/images/Logo/1x/Asset 7.png'
+import image1 from '../public/images/Logo/1x/Logo A.png'
 import styles from '../styles/about.module.css'
-import { Container, Grid, Stack } from '@mui/material'
+import { Container, Grid, Stack, Typography } from '@mui/material'
 
 import Image from 'next/image'
 import { NavbarText } from 'reactstrap'
@@ -15,7 +15,7 @@ const Home: NextPage = () => {
   return (
     <>
       <Head>
-        <title>Home - PT. Cipta Kualitas Teknologi</title>
+        <title>About - PT. Cipta Kualitas Teknologi</title>
         <meta name="description" content="PT. Cipta Kualitas Teknologi" />
       </Head>
 
@@ -23,9 +23,6 @@ const Home: NextPage = () => {
       <main className={styles.home}>
         <section className={styles.header}>
           <Container maxWidth="xl">
-            <Grid md={12} className={styles.titletext} justifyContent="center">
-              About Us
-            </Grid>
             <Grid container justifyContent="left" alignItems="center">
               <Grid md={4}>
                 <Image src={image1} className={styles.image} />
@@ -47,6 +44,28 @@ const Home: NextPage = () => {
                 </Stack>
               </Grid>
             </Grid>
+          </Container>
+        </section>
+        <section className={styles.secondcontent}>
+          <Container maxWidth={false} className={styles.maincontent}>
+            <div className={styles.maincontent0}>
+              <div className={styles.maincontent1}>
+                <Stack
+                  direction="row"
+                  spacing={2}
+                  justifyContent="center"
+                  paddingBottom="5px"
+                >
+                  <NavbarText className={styles.textcontent1}>Value</NavbarText>
+                  <NavbarText className={styles.textcontent}>
+                    PT. Cipta Kualitias Teknologi
+                  </NavbarText>
+                </Stack>
+                <NavbarText className={styles.textcontent2}>
+                  Our Best Solution
+                </NavbarText>
+              </div>
+            </div>
           </Container>
         </section>
       </main>

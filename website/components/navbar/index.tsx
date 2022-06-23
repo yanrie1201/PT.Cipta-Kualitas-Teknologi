@@ -30,7 +30,11 @@ const Navbar = ({ setBackgroundColor, setPosition }: NavbarProps) => {
                 justifyContent: 'flex-start',
               }}
             >
-              <Logo width="160vw" height="80vh" />
+              <Link href="/">
+                <a>
+                  <Logo width="160vw" height="80vh" />
+                </a>
+              </Link>
             </Box>
           </Grid>
           <Grid container md={9} className={styles.navbarItems}>
@@ -41,7 +45,9 @@ const Navbar = ({ setBackgroundColor, setPosition }: NavbarProps) => {
               justifyContent="flex-end"
             >
               <NavbarPage color="white" className={styles.navbarText}>
-                Home
+                <Link href="/">
+                  <a>Home</a>
+                </Link>
               </NavbarPage>
               <NavbarPage color="white" className={styles.navbarText}>
                 Products
