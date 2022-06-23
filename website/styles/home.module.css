@@ -3,7 +3,7 @@
 }
 .header {
   background-image: url("../public/images/Background/server 3.jpeg");
-  height: 1000px;
+  height: 100vh;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;

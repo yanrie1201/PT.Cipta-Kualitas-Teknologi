@@ -1,15 +1,15 @@
-import { style } from '@mui/system'
-import type { NextPage } from 'next'
-import Head from 'next/head'
-import { HomeButton } from '../components/button'
-import Footer from '../components/footer'
-import Navbar from '../components/navbar'
-import image1 from '../public/images/Logo/1x/Logo A.png'
-import styles from '../styles/about.module.css'
-import { Container, Grid, Stack, Typography } from '@mui/material'
+import { style } from "@mui/system";
+import type { NextPage } from "next";
+import Head from "next/head";
+import { HomeButton } from "../components/button";
+import Footer from "../components/footer";
+import Navbar from "../components/navbar";
+import image1 from "../public/images/Logo/SVG/Logo A.svg";
+import styles from "../styles/about.module.css";
+import { Container, Grid, Stack, Typography } from "@mui/material";
 
-import Image from 'next/image'
-import { NavbarText } from 'reactstrap'
+import Image from "next/image";
+import { NavbarText } from "reactstrap";
 
 const Home: NextPage = () => {
   return (
@@ -71,7 +71,7 @@ const Home: NextPage = () => {
       </main>
       <Footer />
     </>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;
