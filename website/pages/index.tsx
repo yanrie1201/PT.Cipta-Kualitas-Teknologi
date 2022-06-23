@@ -1,16 +1,15 @@
-import { style } from '@mui/system'
-import type { NextPage } from 'next'
-import Head from 'next/head'
-import { HomeButton } from '../components/button'
-import Footer from '../components/footer'
-import Navbar from '../components/navbar'
-import imageSolution_1 from '../public/images/Background/Server 1.jpeg'
-import imageSolution_2 from '../public/images/Background/Server 2.jpeg'
-import imageSolution_3 from '../public/images/Background/Server 1.jpeg'
-import styles from '../styles/home.module.css'
-import { Container, Grid } from '@mui/material'
+import type { NextPage } from "next";
+import Head from "next/head";
+import { HomeButton } from "../components/button";
+import Footer from "../components/footer";
+import Navbar from "../components/navbar";
+import imageSolution_1 from "../public/images/Assets/SVG/Solution_IT.svg";
+import imageSolution_2 from "../public/images/Assets/SVG/Solution_NET.svg";
+import imageSolution_3 from "../public/images/Assets/SVG/Solution_IoT.svg";
+import styles from "../styles/home.module.css";
+import { Container, Grid } from "@mui/material";
 
-import Image from 'next/image'
+import Image from "next/image";
 
 const Home: NextPage = () => {
   return (
@@ -59,7 +58,7 @@ const Home: NextPage = () => {
               </Grid>
               <Grid md={3} container className={styles.solutionContent}>
                 <Grid md={12} className={styles.solutionImage}>
-                  <Image src={imageSolution_1} className={styles.image} />
+                  <Image src={imageSolution_1} />
                 </Grid>
                 <Grid md={12} className={styles.solutionName}>
                   IT Infrastructure
@@ -67,7 +66,7 @@ const Home: NextPage = () => {
               </Grid>
               <Grid md={3} container className={styles.solutionContent}>
                 <Grid md={12} className={styles.solutionImage}>
-                  <Image src={imageSolution_2} className={styles.image} />
+                  <Image src={imageSolution_2} />
                 </Grid>
                 <Grid md={12} className={styles.solutionName}>
                   Network & Security
@@ -75,7 +74,7 @@ const Home: NextPage = () => {
               </Grid>
               <Grid md={3} container className={styles.solutionContent}>
                 <Grid md={12} className={styles.solutionImage}>
-                  <Image src={imageSolution_3} className={styles.image} />
+                  <Image src={imageSolution_3} />
                 </Grid>
                 <Grid md={12} className={styles.solutionName}>
                   Internet of Things
@@ -87,7 +86,7 @@ const Home: NextPage = () => {
       </main>
       <Footer />
     </>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;

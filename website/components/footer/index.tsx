@@ -1,18 +1,13 @@
 /* eslint-disable react/jsx-no-duplicate-props */
 import { FooterText } from "../typography";
 import styles from "../../styles/footer.module.css";
-import logo from "../../public/images/white_logo-removebg-preview.png";
-import Image from "next/image";
-import { style } from "@mui/system";
 import { Box, Container, Grid, Stack } from "@mui/material";
 import Logo from "../logo/index";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
-import FacebookIcon from "@mui/icons-material/Facebook";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import PhoneIcon from "@mui/icons-material/Phone";
 import FaxIcon from "@mui/icons-material/Fax";
 import EmailIcon from "@mui/icons-material/Email";
-import Link from "next/link";
 
 const Footer = () => {
   return (

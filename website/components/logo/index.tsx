@@ -1,10 +1,6 @@
-/* eslint-disable react/jsx-no-duplicate-props */
-import { NavbarPage, TitlePage } from "../typography";
 import styles from "../../styles/navbar.module.css";
-import { Avatar, Box, Stack } from "@mui/material";
-import logo from "../../public/images/Logo/SVG/Asset 7.svg";
+import logo from "../../public/images/Logo/SVG/Logo A.svg";
 import Image from "next/image";
-import { style } from "@mui/system";
 
 interface LogoProps {
   width: string;

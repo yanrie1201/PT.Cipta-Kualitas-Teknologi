@@ -1,16 +1,12 @@
 /* eslint-disable react/jsx-no-duplicate-props */
-import { NavbarPage, TitlePage } from '../typography'
-import styles from '../../styles/navbar.module.css'
-import { Avatar, Box, Container, Grid, Stack } from '@mui/material'
-import logo from '../../public/images/Logo/SVG/Asset 7.svg'
-import Image from 'next/image'
-import { style } from '@mui/system'
-import NextImage from 'next/image'
-import Link from 'next/link'
-import Logo from '../logo'
+import { NavbarPage } from "../typography";
+import styles from "../../styles/navbar.module.css";
+import { Box, Container, Grid, Stack } from "@mui/material";
+import Link from "next/link";
+import Logo from "../logo";
 interface NavbarProps {
-  setBackgroundColor: string
-  setPosition: string
+  setBackgroundColor: string;
+  setPosition: string;
 }
 const Navbar = ({ setBackgroundColor, setPosition }: NavbarProps) => {
   return (
@@ -26,8 +22,8 @@ const Navbar = ({ setBackgroundColor, setPosition }: NavbarProps) => {
           <Grid md={3}>
             <Box
               sx={{
-                display: 'flex',
-                justifyContent: 'flex-start',
+                display: "flex",
+                justifyContent: "flex-start",
               }}
             >
               <Link href="/">
@@ -65,7 +61,7 @@ const Navbar = ({ setBackgroundColor, setPosition }: NavbarProps) => {
         </Grid>
       </Container>
     </Container>
-  )
-}
+  );
+};
 
-export default Navbar
+export default Navbar;
