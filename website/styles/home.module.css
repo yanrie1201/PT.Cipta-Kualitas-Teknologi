@@ -7,14 +7,14 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
-.overlay {
+.headerOverlay {
   background-color: var(--overlay-black-20);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   height: 100%;
 }
-.transition {
+.headerTransition {
   padding-top: 100px;
   background: rgb(255, 255, 255);
   background: linear-gradient(
@@ -29,7 +29,7 @@
   height: 100%;
   vertical-align: middle;
 }
-.titleContainer {
+.headerTitleContainer {
   display: block;
   position: relative;
   padding: 20px;
@@ -42,12 +42,12 @@
   transform: translate(-50%, -50%);
   cursor: default;
 }
-.title {
+.headerTitle {
   font-size: 64px;
   font-weight: 700;
   margin: 0 auto;
 }
-.subTitle {
+.headerSubtitle {
   font-size: 32px;
   font-weight: 200;
   max-width: 800px;

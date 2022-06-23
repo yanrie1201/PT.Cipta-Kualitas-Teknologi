@@ -24,11 +24,11 @@ const Home: NextPage = () => {
       <Navbar setBackgroundColor="transparent" setPosition="absolute" />
       <main className={styles.home}>
         <section className={styles.header}>
-          <div className={styles.overlay}>
-            <div className={styles.transition}>
-              <div className={styles.titleContainer}>
-                <div className={styles.title}>WE READY TO SERVE YOU</div>
-                <div className={styles.subTitle}>
+          <div className={styles.headerOverlay}>
+            <div className={styles.headerTransition}>
+              <div className={styles.headerTitleContainer}>
+                <div className={styles.headerTitle}>WE READY TO SERVE YOU</div>
+                <div className={styles.headerSubtitle}>
                   We provide you with our best solution in IT Infrastructure,
                   Security, and Internet of Things
                 </div>
