@@ -51,6 +51,7 @@ const Footer = () => {
                   display: "flex",
                   justifyContent: "flex-start",
                 }}
+                className={styles.footerLogo}
               >
                 <Logo width="200vw" height="100vh" />
               </Box>

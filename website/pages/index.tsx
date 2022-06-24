@@ -19,7 +19,13 @@ const Home: NextPage = () => {
         <meta name="description" content="PT. Cipta Kualitas Teknologi" />
       </Head>
 
-      <Navbar setBackgroundColor="transparent" setPosition="absolute" />
+      <Navbar
+        setBackgroundColor="transparent"
+        setPosition="absolute"
+        setLogoFilter="brightness(100)"
+        setTextColor="var(--white)"
+        setShadow="0"
+      />
       <main className={styles.home}>
         <section className={styles.header}>
           <div className={styles.headerOverlay}>
@@ -66,7 +72,9 @@ const Home: NextPage = () => {
               </Grid>
               <Grid md={3} container className={styles.solutionContent}>
                 <Grid md={12} className={styles.solutionImage}>
-                  <Image src={imageSolution_2} />
+                  <div className={styles.solutionImageException}>
+                    <Image src={imageSolution_2} />
+                  </div>
                 </Grid>
                 <Grid md={12} className={styles.solutionName}>
                   Network & Security
@@ -83,6 +91,7 @@ const Home: NextPage = () => {
             </Grid>
           </Container>
         </section>
+        <section className={styles.a}></section>
       </main>
       <Footer />
     </>

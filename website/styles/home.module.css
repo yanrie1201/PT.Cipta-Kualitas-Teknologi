@@ -76,6 +76,11 @@
 .solutionImage {
   padding: 0 100px;
   margin-bottom: 20px;
+  text-align: center;
+}
+.solutionImageException {
+  position: relative;
+  left: 20px;
 }
 .solutionName {
   font-size: 28px;

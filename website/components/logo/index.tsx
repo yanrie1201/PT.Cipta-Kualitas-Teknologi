@@ -10,13 +10,7 @@ interface LogoProps {
 const Logo = ({ width, height }: LogoProps) => {
   return (
     <>
-      <Image
-        width={width}
-        height={height}
-        className={styles.logo}
-        src={logo}
-        alt="Logo"
-      />
+      <Image width={width} height={height} src={logo} alt="Logo" />
     </>
   );
 };

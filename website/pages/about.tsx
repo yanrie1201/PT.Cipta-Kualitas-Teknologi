@@ -1,18 +1,18 @@
-import { style } from '@mui/system'
-import type { NextPage } from 'next'
-import Head from 'next/head'
-import { HomeButton } from '../components/button'
-import Footer from '../components/footer'
-import Navbar from '../components/navbar'
-import image1 from '../public/images/Logo/SVG/Logo A.svg'
-import styles from '../styles/about.module.css'
-import { Container, Grid, Paper, Stack, Typography } from '@mui/material'
-import imageSolution_1 from '../public/images/Assets/SVG/Solution_IT.svg'
-import imageSolution_2 from '../public/images/Assets/SVG/Solution_NET.svg'
-import imageSolution_3 from '../public/images/Assets/SVG/Solution_IoT.svg'
+import { style } from "@mui/system";
+import type { NextPage } from "next";
+import Head from "next/head";
+import { HomeButton } from "../components/button";
+import Footer from "../components/footer";
+import Navbar from "../components/navbar";
+import image1 from "../public/images/Logo/SVG/Logo A.svg";
+import styles from "../styles/about.module.css";
+import { Container, Grid, Paper, Stack, Typography } from "@mui/material";
+import imageSolution_1 from "../public/images/Assets/SVG/Solution_IT.svg";
+import imageSolution_2 from "../public/images/Assets/SVG/Solution_NET.svg";
+import imageSolution_3 from "../public/images/Assets/SVG/Solution_IoT.svg";
 
-import Image from 'next/image'
-import { NavbarText } from 'reactstrap'
+import Image from "next/image";
+import { NavbarText } from "reactstrap";
 
 const About: NextPage = () => (
   <>
@@ -21,8 +21,14 @@ const About: NextPage = () => (
       <meta name="description" content="PT. Cipta Kualitas Teknologi" />
     </Head>
 
-    <Navbar setBackgroundColor="" setPosition="absolute" />
-    <main className={styles.home}>
+    <Navbar
+      setBackgroundColor="var(--white)"
+      setPosition="absolute"
+      setLogoFilter="none"
+      setTextColor="var(--black)"
+      setShadow="0 0 15px 0px rgba(0, 0, 0, 0.5)"
+    />
+    <main className={styles.about}>
       <section className={styles.header}>
         <Container maxWidth="xl">
           <Grid container justifyContent="left" alignItems="center">
@@ -32,7 +38,7 @@ const About: NextPage = () => (
             <Grid md={8} className={styles.abouttext}>
               <Stack direction="column" spacing={5}>
                 <NavbarText className={styles.abouttext1}>
-                  Who Are We ?
+                  Who Are <span className={styles.textTheme}>We ?</span>
                 </NavbarText>
                 <NavbarText>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -147,6 +153,6 @@ const About: NextPage = () => (
     </main>
     <Footer />
   </>
-)
+);
 
-export default About
+export default About;

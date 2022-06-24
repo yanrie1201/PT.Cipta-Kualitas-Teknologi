@@ -1,14 +1,9 @@
 .navbar {
-  background-color: var(--theme);
-  /* box-shadow: 5px 5px 15px 0px rgba(27, 26, 26, 0.5); */
+  background-color: var(--white);
 }
 
 .navbarcontent {
   padding: 10px 10px;
-}
-
-.logo {
-  filter: brightness(100);
 }
 
 .title {
@@ -43,7 +38,6 @@
   width: 0%;
   content: ".";
   color: transparent;
-  background: var(--white);
   height: 2px;
 }
 .navbarItems .navbarText:hover:after {

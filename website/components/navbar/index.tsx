@@ -7,13 +7,22 @@ import Logo from "../logo";
 interface NavbarProps {
   setBackgroundColor: string;
   setPosition: string;
+  setLogoFilter: string;
+  setTextColor: string;
+  setShadow: string;
 }
-const Navbar = ({ setBackgroundColor, setPosition }: NavbarProps) => {
+const Navbar = ({
+  setBackgroundColor,
+  setPosition,
+  setLogoFilter,
+  setTextColor = "var(--black)",
+  setShadow = "0",
+}: NavbarProps) => {
   return (
     <Container
       maxWidth={false}
       style={{ backgroundColor: setBackgroundColor }}
-      sx={{ position: setPosition }}
+      sx={{ position: setPosition, boxShadow: setShadow }}
       className={styles.navbar}
     >
       {/* <Logo /> */}
@@ -28,7 +37,9 @@ const Navbar = ({ setBackgroundColor, setPosition }: NavbarProps) => {
             >
               <Link href="/">
                 <a>
-                  <Logo width="160vw" height="80vh" />
+                  <div className="logo" style={{ filter: setLogoFilter }}>
+                    <Logo width="160vw" height="80vh" />
+                  </div>
                 </a>
               </Link>
             </Box>
@@ -40,20 +51,20 @@ const Navbar = ({ setBackgroundColor, setPosition }: NavbarProps) => {
               width="100%"
               justifyContent="flex-end"
             >
-              <NavbarPage color="white" className={styles.navbarText}>
+              <NavbarPage color={setTextColor} className={styles.navbarText}>
                 <Link href="/">
                   <a>Home</a>
                 </Link>
               </NavbarPage>
-              <NavbarPage color="white" className={styles.navbarText}>
+              <NavbarPage color={setTextColor} className={styles.navbarText}>
                 Products
               </NavbarPage>
-              <NavbarPage color="white" className={styles.navbarText}>
+              <NavbarPage color={setTextColor} className={styles.navbarText}>
                 <Link href="../about">
                   <a>About</a>
                 </Link>
               </NavbarPage>
-              <NavbarPage color="white" className={styles.navbarText}>
+              <NavbarPage color={setTextColor} className={styles.navbarText}>
                 Contact
               </NavbarPage>
             </Stack>

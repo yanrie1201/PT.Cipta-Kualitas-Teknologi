@@ -45,3 +45,6 @@
 .navbarBackgroundBot {
   background-color: var(--theme);
 }
+.footerLogo {
+  filter: brightness(100);
+}
