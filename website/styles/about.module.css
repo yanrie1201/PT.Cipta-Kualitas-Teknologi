@@ -60,3 +60,39 @@
   color: white;
   font-weight: 600;
 }
+
+.solutionContainer {
+  padding-top: 30px;
+  padding-bottom: 50px;
+}
+
+.solutionImage {
+  padding: 0 150px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.solutionImage1 {
+  padding-left: 200px;
+  padding-right: 150px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.solutionName {
+  font-size: 28px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.solutionName1 {
+  padding: 20px 0px;
+  text-align: center;
+  font-size: 20px;
+  line-height: 2.5rem;
+}
+
+.solutionContent {
+  padding: 0px 15px;
+  padding-top: 30px;
+  padding-bottom: 10px;
+}
