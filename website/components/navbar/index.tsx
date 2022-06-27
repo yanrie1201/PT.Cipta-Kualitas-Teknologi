@@ -1,22 +1,22 @@
 /* eslint-disable react/jsx-no-duplicate-props */
-import { NavbarPage } from "../typography";
-import styles from "../../styles/navbar.module.css";
-import { Box, Container, Grid, Stack } from "@mui/material";
-import Link from "next/link";
-import Logo from "../logo";
+import { NavbarPage } from '../typography'
+import styles from '../../styles/navbar.module.css'
+import { Box, Container, Grid, Stack } from '@mui/material'
+import Link from 'next/link'
+import Logo from '../logo'
 interface NavbarProps {
-  setBackgroundColor: string;
-  setPosition: string;
-  setLogoFilter: string;
-  setTextColor: string;
-  setShadow: string;
+  setBackgroundColor: string
+  setPosition: string
+  setLogoFilter: string
+  setTextColor: string
+  setShadow: string
 }
 const Navbar = ({
   setBackgroundColor,
   setPosition,
   setLogoFilter,
-  setTextColor = "var(--black)",
-  setShadow = "0",
+  setTextColor = 'var(--black)',
+  setShadow = '0',
 }: NavbarProps) => {
   return (
     <Container
@@ -31,8 +31,8 @@ const Navbar = ({
           <Grid md={3}>
             <Box
               sx={{
-                display: "flex",
-                justifyContent: "flex-start",
+                display: 'flex',
+                justifyContent: 'flex-start',
               }}
             >
               <Link href="/">
@@ -65,14 +65,16 @@ const Navbar = ({
                 </Link>
               </NavbarPage>
               <NavbarPage color={setTextColor} className={styles.navbarText}>
-                Contact
+                <Link href="../contact">
+                  <a>Contact</a>
+                </Link>
               </NavbarPage>
             </Stack>
           </Grid>
         </Grid>
       </Container>
     </Container>
-  );
-};
+  )
+}
 
-export default Navbar;
+export default Navbar
