@@ -60,7 +60,7 @@ const Home: NextPage = () => {
               className={styles.solutionContainer}
             >
               <Grid md={12} className={styles.solutionTitle}>
-                Our Best Solution
+                Our <span className={styles.colorBlack}>Best Solution</span>
               </Grid>
               <Grid md={3} container className={styles.solutionContent}>
                 <Grid md={12} className={styles.solutionImage}>
@@ -91,7 +91,92 @@ const Home: NextPage = () => {
             </Grid>
           </Container>
         </section>
-        <section className={styles.a}></section>
+        <section className={styles.categorySection}>
+          <Container maxWidth="xl">
+            <Grid
+              container
+              justifyContent="center"
+              alignItems="center"
+              className={styles.categoryContainer}
+            >
+              <Grid md={12} className={styles.categoryTitle}>
+                <span className={styles.colorBlack}>Our</span> Products
+              </Grid>
+              <Grid md={4} className={styles.categoryContent}>
+                <div className={styles.categoryBoxContainer}>
+                  <div className={styles.categoryAspect}></div>
+                  <div
+                    className={[styles.categoryBox, styles.categoryHue0].join(
+                      " "
+                    )}
+                  >
+                    <div className={styles.categoryName}>Hardware</div>
+                  </div>
+                </div>
+              </Grid>
+              <Grid md={4} className={styles.categoryContent}>
+                <div className={styles.categoryBoxContainer}>
+                  <div className={styles.categoryAspect}></div>
+                  <div
+                    className={[styles.categoryBox, styles.categoryHue1].join(
+                      " "
+                    )}
+                  >
+                    <div className={styles.categoryName}>Backup & Security</div>
+                  </div>
+                </div>
+              </Grid>
+              <Grid md={4} className={styles.categoryContent}>
+                <div className={styles.categoryBoxContainer}>
+                  <div className={styles.categoryAspect}></div>
+                  <div
+                    className={[styles.categoryBox, styles.categoryHue2].join(
+                      " "
+                    )}
+                  >
+                    <div className={styles.categoryName}>Virtualization</div>
+                  </div>
+                </div>
+              </Grid>
+              <Grid md={4} className={styles.categoryContent}>
+                <div className={styles.categoryBoxContainer}>
+                  <div className={styles.categoryAspect}></div>
+                  <div
+                    className={[styles.categoryBox, styles.categoryHue3].join(
+                      " "
+                    )}
+                  >
+                    <div className={styles.categoryName}>Replication & BCS</div>
+                  </div>
+                </div>
+              </Grid>
+              <Grid md={4} className={styles.categoryContent}>
+                <div className={styles.categoryBoxContainer}>
+                  <div className={styles.categoryAspect}></div>
+                  <div
+                    className={[styles.categoryBox, styles.categoryHue4].join(
+                      " "
+                    )}
+                  >
+                    <div className={styles.categoryName}>Networking</div>
+                  </div>
+                </div>
+              </Grid>
+              <Grid md={4} className={styles.categoryContent}>
+                <div className={styles.categoryBoxContainer}>
+                  <div className={styles.categoryAspect}></div>
+                  <div
+                    className={[styles.categoryBox, styles.categoryHue5].join(
+                      " "
+                    )}
+                  >
+                    <div className={styles.categoryName}>Cloud Service</div>
+                  </div>
+                </div>
+              </Grid>
+            </Grid>
+          </Container>
+        </section>
       </main>
       <Footer />
     </>
