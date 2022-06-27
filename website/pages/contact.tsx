@@ -7,6 +7,7 @@ import Navbar from '../components/navbar'
 import image1 from '../public/images/Logo/SVG/Logo A.svg'
 import styles from '../styles/contact.module.css'
 import {
+  Box,
   Container,
   Grid,
   Paper,
@@ -56,19 +57,37 @@ const About: NextPage = () => (
       <section className={styles.header}>
         <Container maxWidth="xl">
           <Grid container justifyContent="left" alignItems="center">
-            <Grid md={6}>
+            <Grid md={7}>
               <Paper sx={{ padding: '10px 10px' }}>
-                <FooterText color="#000" fsize="30px">
+                <FooterText color="#000" fsize="30px" textalign="center">
                   Contact Us
+                </FooterText>
+                <FooterText color="#000" fsize="15px">
+                  *You can contact us using form that we already provided
                 </FooterText>
                 <Stack direction="column" spacing={2}>
                   <CssTextField type="text" label="Full Name" />
                   <CssTextField type="text" label="Email" />
                   <CssTextField type="text" label="Phone Number" />
-                  <CssTextField type="text" label="Description" />
+                  <CssTextField type="text" label="Subject" />
+                  <CssTextField multiline type="text" label="Description" />
                 </Stack>
+                <Box
+                  display="flex"
+                  justifyContent="center"
+                  sx={{ padding: '10px 0px' }}
+                >
+                  <HomeButton
+                    width="fit-content"
+                    padding="5px 50px"
+                    fsize="20px"
+                  >
+                    Submit
+                  </HomeButton>
+                </Box>
               </Paper>
             </Grid>
+            <Grid md={5}></Grid>
           </Grid>
         </Container>
       </section>
