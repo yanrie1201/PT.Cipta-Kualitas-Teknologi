@@ -63,7 +63,12 @@ const About: NextPage = () => (
                 sx={{ backgroundColor: '#ffff' }}
                 className={styles.form1}
               >
-                <FooterText color="#000" fsize="30px" textalign="center">
+                <FooterText
+                  color="#000"
+                  fsize="30px"
+                  textalign="center"
+                  fontWeight="500"
+                >
                   Contact Us
                 </FooterText>
                 <FooterText color="#000" fsize="15px">
