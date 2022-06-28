@@ -2,7 +2,7 @@
   display: block;
 }
 .header {
-  background-image: url("../public/images/Background/server 3.jpeg");
+  background-image: url('../public/images/Background/server 3.jpeg');
   height: 100vh;
   background-position: center;
   background-repeat: no-repeat;
@@ -89,7 +89,9 @@
   text-align: center;
 }
 .categoryContainer {
-  padding: 150px 200px;
+  padding: 0px 200px;
+  padding-top: 50px;
+  padding-bottom: 100px;
 }
 .categorySection {
   background-color: var(--white);

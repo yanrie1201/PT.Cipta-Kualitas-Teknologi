@@ -2,6 +2,31 @@
 }
 
 .header {
-  padding-top: 150px;
-  padding-bottom: 50px;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(255, 255, 255, 1) 50%,
+    rgba(255, 59, 59, 1) 50%,
+    rgba(255, 59, 59, 1) 100%
+  );
+}
+
+.form {
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(255, 255, 255, 1) 50%,
+    rgba(255, 59, 59, 1) 50%,
+    rgba(255, 59, 59, 1) 100%
+  );
+}
+
+.form1 {
+  padding: 100px 30px;
+}
+
+.contentright {
+  padding-left: 30px;
 }
