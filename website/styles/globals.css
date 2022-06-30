@@ -59,3 +59,35 @@ a {
   border-radius: 0px;
   border: 0px solid var(--white);
 }
+.slick-active,
+.slick-slide,
+.slick-center {
+  transition: all 1s !important;
+}
+.slick-center {
+  transform: scale(1.2) !important;
+}
+
+.slick-prev:before {
+  right: 10px !important;
+}
+
+.slick-next:before {
+  left: 10px !important;
+}
+.slick-prev:before,
+.slick-next:before {
+  color: var(--theme) !important;
+  font-size: 28px !important;
+  position: absolute;
+}
+/* .slick-dots .slick-active {
+  color: var(--theme) !important;
+}
+.slick-dots li button {
+  color: var(--theme) !important;
+} */
+.slick-dots li button:before {
+  color: var(--theme) !important;
+  font-size: 8px !important;
+}

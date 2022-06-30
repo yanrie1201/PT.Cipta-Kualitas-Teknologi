@@ -27,9 +27,15 @@ import Slider from "react-slick";
 const settings = {
   dots: true,
   infinite: true,
-  speed: 500,
+  arrows: true,
+  speed: 1000,
   slidesToShow: 3,
-  slidesToScroll: 1,
+  focusOnSelect: true,
+  pauseOnHover: true,
+  autoplay: true,
+  autoplaySpeed: 5000,
+  centerMode: true,
+  centerPadding: "75px",
 };
 const Home: NextPage = () => {
   return (
@@ -216,7 +222,7 @@ const Home: NextPage = () => {
                         <Image src={imageProduct_1} />
                       </div>
                       <div className={styles.productName}>
-                        Hewlett Packard (HP)
+                        <a href="#">Hewlett Packard</a>
                       </div>
                     </div>
                   </div>
@@ -225,7 +231,9 @@ const Home: NextPage = () => {
                       <div className={styles.productImage}>
                         <Image src={imageProduct_2} />
                       </div>
-                      <div className={styles.productName}>H3C</div>
+                      <div className={styles.productName}>
+                        <a href="#">H3C</a>
+                      </div>
                     </div>
                   </div>
                   <div className={styles.productContent}>
@@ -233,7 +241,9 @@ const Home: NextPage = () => {
                       <div className={styles.productImage}>
                         <Image src={imageProduct_3} />
                       </div>
-                      <div className={styles.productName}>DELL</div>
+                      <div className={styles.productName}>
+                        <a href="#">DELL</a>
+                      </div>
                     </div>
                   </div>
                   <div className={styles.productContent}>
@@ -241,7 +251,9 @@ const Home: NextPage = () => {
                       <div className={styles.productImage}>
                         <Image src={imageProduct_4} />
                       </div>
-                      <div className={styles.productName}>Commvault</div>
+                      <div className={styles.productName}>
+                        <a href="#">Commvault</a>
+                      </div>
                     </div>
                   </div>
                   <div className={styles.productContent}>
@@ -250,7 +262,7 @@ const Home: NextPage = () => {
                         <Image src={imageProduct_5} />
                       </div>
                       <div className={styles.productName}>
-                        Microsoft Hyper-V
+                        <a href="#">Microsoft Hyper-V</a>
                       </div>
                     </div>
                   </div>
@@ -259,7 +271,9 @@ const Home: NextPage = () => {
                       <div className={styles.productImage}>
                         <Image src={imageProduct_6} />
                       </div>
-                      <div className={styles.productName}>Lenovo</div>
+                      <div className={styles.productName}>
+                        <a href="#">Lenovo</a>
+                      </div>
                     </div>
                   </div>
                   <div className={styles.productContent}>
@@ -267,7 +281,9 @@ const Home: NextPage = () => {
                       <div className={styles.productImage}>
                         <Image src={imageProduct_7} />
                       </div>
-                      <div className={styles.productName}>Office 365</div>
+                      <div className={styles.productName}>
+                        <a href="#">Office 365</a>
+                      </div>
                     </div>
                   </div>
                   <div className={styles.productContent}>
@@ -275,7 +291,9 @@ const Home: NextPage = () => {
                       <div className={styles.productImage}>
                         <Image src={imageProduct_8} />
                       </div>
-                      <div className={styles.productName}>Sangfor</div>
+                      <div className={styles.productName}>
+                        <a href="#">Sangfor</a>
+                      </div>
                     </div>
                   </div>
                   <div className={styles.productContent}>
@@ -283,7 +301,9 @@ const Home: NextPage = () => {
                       <div className={styles.productImage}>
                         <Image src={imageProduct_9} />
                       </div>
-                      <div className={styles.productName}>Trend Micro</div>
+                      <div className={styles.productName}>
+                        <a href="#">Trend Micro</a>
+                      </div>
                     </div>
                   </div>
                   <div className={styles.productContent}>
@@ -291,7 +311,9 @@ const Home: NextPage = () => {
                       <div className={styles.productImage}>
                         <Image src={imageProduct_10} />
                       </div>
-                      <div className={styles.productName}>VMware</div>
+                      <div className={styles.productName}>
+                        <a href="#">VMware</a>
+                      </div>
                     </div>
                   </div>
                 </Slider>
