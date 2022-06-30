@@ -31,6 +31,7 @@ const settings = {
   speed: 1000,
   slidesToShow: 3,
   focusOnSelect: true,
+  swipeToSlide: true,
   pauseOnHover: true,
   autoplay: true,
   autoplaySpeed: 5000,

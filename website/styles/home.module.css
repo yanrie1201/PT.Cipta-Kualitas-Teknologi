@@ -196,8 +196,6 @@
   display: flex;
   align-items: center;
 }
-.productImage img {
-}
 .productName {
   /* display: none; */
   font-size: 28px;
