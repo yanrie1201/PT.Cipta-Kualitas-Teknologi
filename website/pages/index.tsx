@@ -6,11 +6,31 @@ import Navbar from "../components/navbar";
 import imageSolution_1 from "../public/images/Assets/SVG/Solution_IT.svg";
 import imageSolution_2 from "../public/images/Assets/SVG/Solution_NET.svg";
 import imageSolution_3 from "../public/images/Assets/SVG/Solution_IoT.svg";
+import imageProduct_1 from "../public/images/Assets/1x/Logo_HP.png";
+import imageProduct_2 from "../public/images/Assets/1x/Logo_H3C.png";
+import imageProduct_3 from "../public/images/Assets/1x/Logo_Dell.png";
+import imageProduct_4 from "../public/images/Assets/1x/Logo_Comvault.png";
+import imageProduct_5 from "../public/images/Assets/1x/Logo_HyperV.png";
+import imageProduct_6 from "../public/images/Assets/1x/Logo_lenovo.png";
+import imageProduct_7 from "../public/images/Assets/1x/Logo_Office.png";
+import imageProduct_8 from "../public/images/Assets/1x/Logo_Sangfor.png";
+import imageProduct_9 from "../public/images/Assets/1x/Logo_TrendM.png";
+import imageProduct_10 from "../public/images/Assets/1x/Logo_VMWare.png";
 import styles from "../styles/home.module.css";
 import { Container, Grid } from "@mui/material";
-
 import Image from "next/image";
-
+import { Carousel } from "react-responsive-carousel";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import React from "react";
+import Slider from "react-slick";
+const settings = {
+  dots: true,
+  infinite: true,
+  speed: 500,
+  slidesToShow: 3,
+  slidesToScroll: 1,
+};
 const Home: NextPage = () => {
   return (
     <>
@@ -100,7 +120,7 @@ const Home: NextPage = () => {
               className={styles.categoryContainer}
             >
               <Grid md={12} className={styles.categoryTitle}>
-                <span className={styles.colorBlack}>Our</span> Products
+                <span className={styles.colorBlack}>Our</span> Specialization
               </Grid>
               <Grid md={4} className={styles.categoryContent}>
                 <div className={styles.categoryBoxContainer}>
@@ -173,6 +193,108 @@ const Home: NextPage = () => {
                     <div className={styles.categoryName}>Cloud Service</div>
                   </div>
                 </div>
+              </Grid>
+            </Grid>
+          </Container>
+        </section>
+        <section className={styles.productSection}>
+          <Container maxWidth="xl">
+            <Grid
+              container
+              justifyContent="center"
+              alignItems="center"
+              className={styles.productContainer}
+            >
+              <Grid md={12} className={styles.productTitle}>
+                Our <span className={styles.colorBlack}>Products</span>
+              </Grid>
+              <Grid md={12} className={styles.productCarousel}>
+                <Slider {...settings}>
+                  <div className={styles.productContent}>
+                    <div className={styles.product}>
+                      <div className={styles.productImage}>
+                        <Image src={imageProduct_1} />
+                      </div>
+                      <div className={styles.productName}>
+                        Hewlett Packard (HP)
+                      </div>
+                    </div>
+                  </div>
+                  <div className={styles.productContent}>
+                    <div className={styles.product}>
+                      <div className={styles.productImage}>
+                        <Image src={imageProduct_2} />
+                      </div>
+                      <div className={styles.productName}>H3C</div>
+                    </div>
+                  </div>
+                  <div className={styles.productContent}>
+                    <div className={styles.product}>
+                      <div className={styles.productImage}>
+                        <Image src={imageProduct_3} />
+                      </div>
+                      <div className={styles.productName}>DELL</div>
+                    </div>
+                  </div>
+                  <div className={styles.productContent}>
+                    <div className={styles.product}>
+                      <div className={styles.productImage}>
+                        <Image src={imageProduct_4} />
+                      </div>
+                      <div className={styles.productName}>Commvault</div>
+                    </div>
+                  </div>
+                  <div className={styles.productContent}>
+                    <div className={styles.product}>
+                      <div className={styles.productImage}>
+                        <Image src={imageProduct_5} />
+                      </div>
+                      <div className={styles.productName}>
+                        Microsoft Hyper-V
+                      </div>
+                    </div>
+                  </div>
+                  <div className={styles.productContent}>
+                    <div className={styles.product}>
+                      <div className={styles.productImage}>
+                        <Image src={imageProduct_6} />
+                      </div>
+                      <div className={styles.productName}>Lenovo</div>
+                    </div>
+                  </div>
+                  <div className={styles.productContent}>
+                    <div className={styles.product}>
+                      <div className={styles.productImage}>
+                        <Image src={imageProduct_7} />
+                      </div>
+                      <div className={styles.productName}>Office 365</div>
+                    </div>
+                  </div>
+                  <div className={styles.productContent}>
+                    <div className={styles.product}>
+                      <div className={styles.productImage}>
+                        <Image src={imageProduct_8} />
+                      </div>
+                      <div className={styles.productName}>Sangfor</div>
+                    </div>
+                  </div>
+                  <div className={styles.productContent}>
+                    <div className={styles.product}>
+                      <div className={styles.productImage}>
+                        <Image src={imageProduct_9} />
+                      </div>
+                      <div className={styles.productName}>Trend Micro</div>
+                    </div>
+                  </div>
+                  <div className={styles.productContent}>
+                    <div className={styles.product}>
+                      <div className={styles.productImage}>
+                        <Image src={imageProduct_10} />
+                      </div>
+                      <div className={styles.productName}>VMware</div>
+                    </div>
+                  </div>
+                </Slider>
               </Grid>
             </Grid>
           </Container>
