@@ -16,12 +16,13 @@ import imageProduct_7 from "../public/images/Assets/1x/Logo_Office.png";
 import imageProduct_8 from "../public/images/Assets/1x/Logo_Sangfor.png";
 import imageProduct_9 from "../public/images/Assets/1x/Logo_TrendM.png";
 import imageProduct_10 from "../public/images/Assets/1x/Logo_VMWare.png";
+import imageProduct_11 from "../public/images/Assets/1x/Logo_Veeam.png";
 import styles from "../styles/home.module.css";
 import { Container, Grid } from "@mui/material";
 import Image from "next/image";
-import { Carousel } from "react-responsive-carousel";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import Link from "next/link";
 import React from "react";
 import Slider from "react-slick";
 const settings = {
@@ -130,76 +131,92 @@ const Home: NextPage = () => {
                 <span className={styles.colorBlack}>Our</span> Specialization
               </Grid>
               <Grid md={4} className={styles.categoryContent}>
-                <div className={styles.categoryBoxContainer}>
-                  <div className={styles.categoryAspect}></div>
-                  <div
-                    className={[styles.categoryBox, styles.categoryHue0].join(
-                      " "
-                    )}
-                  >
-                    <div className={styles.categoryName}>Hardware</div>
+                <Link href="../product#hardware">
+                  <div className={styles.categoryBoxContainer}>
+                    <div className={styles.categoryAspect}></div>
+                    <div
+                      className={[styles.categoryBox, styles.categoryHue0].join(
+                        " "
+                      )}
+                    >
+                      <div className={styles.categoryName}>Hardware</div>
+                    </div>
                   </div>
-                </div>
+                </Link>
               </Grid>
               <Grid md={4} className={styles.categoryContent}>
-                <div className={styles.categoryBoxContainer}>
-                  <div className={styles.categoryAspect}></div>
-                  <div
-                    className={[styles.categoryBox, styles.categoryHue1].join(
-                      " "
-                    )}
-                  >
-                    <div className={styles.categoryName}>Backup & Security</div>
+                <Link href="../product#backup-security">
+                  <div className={styles.categoryBoxContainer}>
+                    <div className={styles.categoryAspect}></div>
+                    <div
+                      className={[styles.categoryBox, styles.categoryHue1].join(
+                        " "
+                      )}
+                    >
+                      <div className={styles.categoryName}>
+                        Backup & Security
+                      </div>
+                    </div>
                   </div>
-                </div>
+                </Link>
               </Grid>
               <Grid md={4} className={styles.categoryContent}>
-                <div className={styles.categoryBoxContainer}>
-                  <div className={styles.categoryAspect}></div>
-                  <div
-                    className={[styles.categoryBox, styles.categoryHue2].join(
-                      " "
-                    )}
-                  >
-                    <div className={styles.categoryName}>Virtualization</div>
+                <Link href="../product#virtualization">
+                  <div className={styles.categoryBoxContainer}>
+                    <div className={styles.categoryAspect}></div>
+                    <div
+                      className={[styles.categoryBox, styles.categoryHue2].join(
+                        " "
+                      )}
+                    >
+                      <div className={styles.categoryName}>Virtualization</div>
+                    </div>
                   </div>
-                </div>
+                </Link>
               </Grid>
               <Grid md={4} className={styles.categoryContent}>
-                <div className={styles.categoryBoxContainer}>
-                  <div className={styles.categoryAspect}></div>
-                  <div
-                    className={[styles.categoryBox, styles.categoryHue3].join(
-                      " "
-                    )}
-                  >
-                    <div className={styles.categoryName}>Replication & BCS</div>
+                <Link href="../product#replication-bcs">
+                  <div className={styles.categoryBoxContainer}>
+                    <div className={styles.categoryAspect}></div>
+                    <div
+                      className={[styles.categoryBox, styles.categoryHue3].join(
+                        " "
+                      )}
+                    >
+                      <div className={styles.categoryName}>
+                        Replication & BCS
+                      </div>
+                    </div>
                   </div>
-                </div>
+                </Link>
               </Grid>
               <Grid md={4} className={styles.categoryContent}>
-                <div className={styles.categoryBoxContainer}>
-                  <div className={styles.categoryAspect}></div>
-                  <div
-                    className={[styles.categoryBox, styles.categoryHue4].join(
-                      " "
-                    )}
-                  >
-                    <div className={styles.categoryName}>Networking</div>
+                <Link href="../product#networking">
+                  <div className={styles.categoryBoxContainer}>
+                    <div className={styles.categoryAspect}></div>
+                    <div
+                      className={[styles.categoryBox, styles.categoryHue4].join(
+                        " "
+                      )}
+                    >
+                      <div className={styles.categoryName}>Networking</div>
+                    </div>
                   </div>
-                </div>
+                </Link>
               </Grid>
               <Grid md={4} className={styles.categoryContent}>
-                <div className={styles.categoryBoxContainer}>
-                  <div className={styles.categoryAspect}></div>
-                  <div
-                    className={[styles.categoryBox, styles.categoryHue5].join(
-                      " "
-                    )}
-                  >
-                    <div className={styles.categoryName}>Cloud Service</div>
+                <Link href="../product#cloud-service">
+                  <div className={styles.categoryBoxContainer}>
+                    <div className={styles.categoryAspect}></div>
+                    <div
+                      className={[styles.categoryBox, styles.categoryHue5].join(
+                        " "
+                      )}
+                    >
+                      <div className={styles.categoryName}>Cloud Service</div>
+                    </div>
                   </div>
-                </div>
+                </Link>
               </Grid>
             </Grid>
           </Container>
@@ -223,7 +240,9 @@ const Home: NextPage = () => {
                         <Image src={imageProduct_1} />
                       </div>
                       <div className={styles.productName}>
-                        <a href="#">Hewlett Packard</a>
+                        <Link href="https://www.hpe.com/">
+                          <a target="_blank">Hewlett Packard</a>
+                        </Link>
                       </div>
                     </div>
                   </div>
@@ -233,7 +252,9 @@ const Home: NextPage = () => {
                         <Image src={imageProduct_2} />
                       </div>
                       <div className={styles.productName}>
-                        <a href="#">H3C</a>
+                        <Link href="https://www.h3c.com/">
+                          <a target="_blank">H3C</a>
+                        </Link>
                       </div>
                     </div>
                   </div>
@@ -243,7 +264,9 @@ const Home: NextPage = () => {
                         <Image src={imageProduct_3} />
                       </div>
                       <div className={styles.productName}>
-                        <a href="#">DELL</a>
+                        <Link href="https://www.dell.com/">
+                          <a target="_blank">DELL</a>
+                        </Link>
                       </div>
                     </div>
                   </div>
@@ -253,7 +276,9 @@ const Home: NextPage = () => {
                         <Image src={imageProduct_4} />
                       </div>
                       <div className={styles.productName}>
-                        <a href="#">Commvault</a>
+                        <Link href="https://www.commvault.com/">
+                          <a target="_blank">Commvault</a>
+                        </Link>
                       </div>
                     </div>
                   </div>
@@ -263,7 +288,9 @@ const Home: NextPage = () => {
                         <Image src={imageProduct_5} />
                       </div>
                       <div className={styles.productName}>
-                        <a href="#">Microsoft Hyper-V</a>
+                        <Link href="https://docs.microsoft.com/en-us/windows-server/virtualization/hyper-v/hyper-v-technology-overview">
+                          <a target="_blank">Microsoft Hyper-V</a>
+                        </Link>
                       </div>
                     </div>
                   </div>
@@ -273,7 +300,9 @@ const Home: NextPage = () => {
                         <Image src={imageProduct_6} />
                       </div>
                       <div className={styles.productName}>
-                        <a href="#">Lenovo</a>
+                        <Link href="https://www.lenovo.com/">
+                          <a target="_blank">Lenovo</a>
+                        </Link>
                       </div>
                     </div>
                   </div>
@@ -283,7 +312,9 @@ const Home: NextPage = () => {
                         <Image src={imageProduct_7} />
                       </div>
                       <div className={styles.productName}>
-                        <a href="#">Office 365</a>
+                        <Link href="https://www.microsoft.com/microsoft-365">
+                          <a target="_blank">Office 365</a>
+                        </Link>
                       </div>
                     </div>
                   </div>
@@ -293,7 +324,9 @@ const Home: NextPage = () => {
                         <Image src={imageProduct_8} />
                       </div>
                       <div className={styles.productName}>
-                        <a href="#">Sangfor</a>
+                        <Link href="https://www.sangfor.com/">
+                          <a target="_blank">Sangfor</a>
+                        </Link>
                       </div>
                     </div>
                   </div>
@@ -303,7 +336,9 @@ const Home: NextPage = () => {
                         <Image src={imageProduct_9} />
                       </div>
                       <div className={styles.productName}>
-                        <a href="#">Trend Micro</a>
+                        <Link href="https://www.trendmicro.com/">
+                          <a target="_blank">Trend Micro</a>
+                        </Link>
                       </div>
                     </div>
                   </div>
@@ -313,7 +348,21 @@ const Home: NextPage = () => {
                         <Image src={imageProduct_10} />
                       </div>
                       <div className={styles.productName}>
-                        <a href="#">VMware</a>
+                        <Link href="https://www.vmware.com/">
+                          <a target="_blank">VMware</a>
+                        </Link>
+                      </div>
+                    </div>
+                  </div>
+                  <div className={styles.productContent}>
+                    <div className={styles.product}>
+                      <div className={styles.productImage}>
+                        <Image src={imageProduct_11} />
+                      </div>
+                      <div className={styles.productName}>
+                        <Link href="https://www.veeam.com/">
+                          <a target="_blank">Veeam</a>
+                        </Link>
                       </div>
                     </div>
                   </div>

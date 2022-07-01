@@ -8,6 +8,7 @@ import InstagramIcon from "@mui/icons-material/Instagram";
 import PhoneIcon from "@mui/icons-material/Phone";
 import FaxIcon from "@mui/icons-material/Fax";
 import EmailIcon from "@mui/icons-material/Email";
+import Link from "next/link";
 
 const Footer = () => {
   return (
@@ -59,33 +60,72 @@ const Footer = () => {
             <Grid item md="auto" className={styles.section}>
               <Stack direction="column">
                 <FooterText fsize="18px" mbottom="12px" fontWeight="700">
-                  PT Cipta Kualitas Teknologi
+                  <Link href="../about">
+                    <a>PT Cipta Kualitas Teknologi</a>
+                  </Link>
                 </FooterText>
                 <FooterText mbottom="0px">
-                  IT Infrastructure Solution
+                  <Link href="../about#infrastructure">
+                    <a>IT Infrastructure Solution</a>
+                  </Link>
                 </FooterText>
-                <FooterText mbottom="0px">Internet of Things (IOT)</FooterText>
-                <FooterText mbottom="0px">Network and Security</FooterText>
+                <FooterText mbottom="0px">
+                  <Link href="../about#network-security">
+                    <a>Network and Security</a>
+                  </Link>
+                </FooterText>
+                <FooterText mbottom="0px">
+                  <Link href="../about#internet">
+                    <a>Internet of Things (IOT)</a>
+                  </Link>
+                </FooterText>
               </Stack>
             </Grid>
             <Grid item md="auto" className={styles.section}>
               <Stack direction="column">
                 <FooterText fsize="18px" mbottom="12px" fontWeight="700">
-                  Product
+                  <Link href="../product">
+                    <a>Product</a>
+                  </Link>
                 </FooterText>
-                <FooterText mbottom="0px">Hardware</FooterText>
-                <FooterText mbottom="0px">Backup & Security</FooterText>
-                <FooterText mbottom="0px">Replication & BCS</FooterText>
                 <FooterText mbottom="0px">
-                  Virtualization & Networking
+                  <Link href="../product#hardware">
+                    <a>Hardware</a>
+                  </Link>
                 </FooterText>
-                <FooterText mbottom="0px">Cloud & Service</FooterText>
+                <FooterText mbottom="0px">
+                  <Link href="../product#backup-security">
+                    <a>Backup & Security</a>
+                  </Link>
+                </FooterText>
+                <FooterText mbottom="0px">
+                  <Link href="../product#replication-bcs">
+                    <a>Replication & BCS</a>
+                  </Link>
+                </FooterText>
+                <FooterText mbottom="0px">
+                  <Link href="../product#virtualization">
+                    <a>Virtualization</a>
+                  </Link>
+                </FooterText>
+                <FooterText mbottom="0px">
+                  <Link href="../product#cloud-service">
+                    <a>Cloud & Services</a>
+                  </Link>
+                </FooterText>
+                <FooterText mbottom="0px">
+                  <Link href="../product#networking">
+                    <a>Networking</a>
+                  </Link>
+                </FooterText>
               </Stack>
             </Grid>
             <Grid item md="auto" className={styles.section}>
               <Stack direction="column">
                 <FooterText fsize="18px" mbottom="12px" fontWeight="700">
-                  Contact Us
+                  <Link href="../contact">
+                    <a>Contact Us</a>
+                  </Link>
                 </FooterText>
                 <Stack direction="row" spacing={1}>
                   <PhoneIcon sx={{ color: "var(--white)" }} fontSize="medium" />

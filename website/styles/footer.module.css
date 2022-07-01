@@ -48,3 +48,6 @@
 .footerLogo {
   filter: brightness(100);
 }
+.section a:hover {
+  text-decoration: underline;
+}

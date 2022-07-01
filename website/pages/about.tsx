@@ -85,7 +85,7 @@ const About: NextPage = () => (
             className={styles.solutionContainer}
           >
             <Stack direction="column" spacing={8}>
-              <Paper sx={{ boxShadow: 5 }}>
+              <Paper sx={{ boxShadow: 5 }} id="infrastructure">
                 <Stack className={styles.solutionContent}>
                   <Grid md={12} className={styles.solutionImage}>
                     <Image src={imageSolution_1} width="150vw" height="150vh" />
@@ -105,7 +105,7 @@ const About: NextPage = () => (
                 </Stack>
               </Paper>
 
-              <Paper sx={{ boxShadow: 5 }}>
+              <Paper sx={{ boxShadow: 5 }} id="network-security">
                 <Stack className={styles.solutionContent}>
                   <Grid md={12} className={styles.solutionImage1}>
                     <Image src={imageSolution_2} width="150vw" height="150vh" />
@@ -126,7 +126,7 @@ const About: NextPage = () => (
                 </Stack>
               </Paper>
 
-              <Paper sx={{ boxShadow: 5 }}>
+              <Paper sx={{ boxShadow: 5 }} id="internet">
                 <Stack className={styles.solutionContent}>
                   <Grid md={12} className={styles.solutionImage}>
                     <Image src={imageSolution_3} width="150vw" height="150vh" />
