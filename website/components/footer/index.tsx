@@ -1,14 +1,14 @@
 /* eslint-disable react/jsx-no-duplicate-props */
-import { FooterText } from "../typography";
-import styles from "../../styles/footer.module.css";
-import { Box, Container, Grid, Stack } from "@mui/material";
-import Logo from "../logo/index";
-import LinkedInIcon from "@mui/icons-material/LinkedIn";
-import InstagramIcon from "@mui/icons-material/Instagram";
-import PhoneIcon from "@mui/icons-material/Phone";
-import FaxIcon from "@mui/icons-material/Fax";
-import EmailIcon from "@mui/icons-material/Email";
-import Link from "next/link";
+import { FooterText } from '../typography'
+import styles from '../../styles/footer.module.css'
+import { Box, Container, Grid, Stack } from '@mui/material'
+import Logo from '../logo/index'
+import LinkedInIcon from '@mui/icons-material/LinkedIn'
+import InstagramIcon from '@mui/icons-material/Instagram'
+import PhoneIcon from '@mui/icons-material/Phone'
+import FaxIcon from '@mui/icons-material/Fax'
+import EmailIcon from '@mui/icons-material/Email'
+import Link from 'next/link'
 
 const Footer = () => {
   return (
@@ -27,12 +27,29 @@ const Footer = () => {
                 Connect with us in our social media
               </FooterText>
             </Grid>
-            <Grid container md={8} className={styles.socialIcon}>
-              <LinkedInIcon
-                sx={{ color: "var(--white)", marginLeft: "auto" }}
-                fontSize="large"
-              />
-              <InstagramIcon sx={{ color: "var(--white)" }} fontSize="large" />
+            <Grid
+              container
+              md={8}
+              className={styles.socialIcon}
+              justifyContent="right"
+            >
+              <Link href="https://www.linkedin.com/in/christian-kangean-258550225/?original_referer=https%3A%2F%2Fwww%2Egoogle%2Ecom%2F&originalSubdomain=id">
+                <a>
+                  <LinkedInIcon
+                    sx={{ color: 'var(--white)', marginLeft: 'auto' }}
+                    fontSize="large"
+                  />
+                </a>
+              </Link>
+
+              <Link href="https://www.instagram.com/ciptakualitas/">
+                <a>
+                  <InstagramIcon
+                    sx={{ color: 'var(--white)' }}
+                    fontSize="large"
+                  />
+                </a>
+              </Link>
             </Grid>
           </Grid>
         </Container>
@@ -49,8 +66,8 @@ const Footer = () => {
             <Grid item md="auto" className={styles.section}>
               <Box
                 sx={{
-                  display: "flex",
-                  justifyContent: "flex-start",
+                  display: 'flex',
+                  justifyContent: 'flex-start',
                 }}
                 className={styles.footerLogo}
               >
@@ -128,15 +145,15 @@ const Footer = () => {
                   </Link>
                 </FooterText>
                 <Stack direction="row" spacing={1}>
-                  <PhoneIcon sx={{ color: "var(--white)" }} fontSize="medium" />
+                  <PhoneIcon sx={{ color: 'var(--white)' }} fontSize="medium" />
                   <FooterText>+62 21 5289 7480</FooterText>
                 </Stack>
                 <Stack direction="row" spacing={1}>
-                  <FaxIcon sx={{ color: "var(--white)" }} fontSize="medium" />
+                  <FaxIcon sx={{ color: 'var(--white)' }} fontSize="medium" />
                   <FooterText>+62 21 5289 7399</FooterText>
                 </Stack>
                 <Stack direction="row" spacing={1}>
-                  <EmailIcon sx={{ color: "var(--white)" }} fontSize="medium" />
+                  <EmailIcon sx={{ color: 'var(--white)' }} fontSize="medium" />
                   <FooterText>Christian.kangean@Ciptakualitas.co.id</FooterText>
                 </Stack>
               </Stack>
@@ -159,7 +176,7 @@ const Footer = () => {
         </Container>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default Footer;
+export default Footer
