@@ -1,23 +1,23 @@
-import type { NextPage } from "next";
-import Head from "next/head";
-import Footer from "../components/footer";
-import Navbar from "../components/navbar";
-import imageProduct_1 from "../public/images/Assets/1x/Logo_HP.png";
-import imageProduct_2 from "../public/images/Assets/1x/Logo_H3C.png";
-import imageProduct_3 from "../public/images/Assets/1x/Logo_Dell.png";
-import imageProduct_4 from "../public/images/Assets/1x/Logo_Comvault.png";
-import imageProduct_5 from "../public/images/Assets/1x/Logo_HyperV.png";
-import imageProduct_6 from "../public/images/Assets/1x/Logo_lenovo.png";
-import imageProduct_7 from "../public/images/Assets/1x/Logo_Office.png";
-import imageProduct_8 from "../public/images/Assets/1x/Logo_Sangfor.png";
-import imageProduct_9 from "../public/images/Assets/1x/Logo_TrendM.png";
-import imageProduct_10 from "../public/images/Assets/1x/Logo_VMWare.png";
-import imageProduct_11 from "../public/images/Assets/1x/Logo_Veeam.png";
-import styles from "../styles/product.module.css";
-import { Container, Grid } from "@mui/material";
-import Link from "next/link";
-import Image from "next/image";
-import React from "react";
+import type { NextPage } from 'next'
+import Head from 'next/head'
+import Footer from '../components/footer'
+import Navbar from '../components/navbar'
+import imageProduct_1 from '../public/images/Assets/1x/Logo_HP.png'
+import imageProduct_2 from '../public/images/Assets/1x/Logo_H3C.png'
+import imageProduct_3 from '../public/images/Assets/1x/Logo_Dell.png'
+import imageProduct_4 from '../public/images/Assets/1x/Logo_Comvault.png'
+import imageProduct_5 from '../public/images/Assets/1x/Logo_HyperV.png'
+import imageProduct_6 from '../public/images/Assets/1x/Logo_lenovo.png'
+import imageProduct_7 from '../public/images/Assets/1x/Logo_Office.png'
+import imageProduct_8 from '../public/images/Assets/1x/Logo_Sangfor.png'
+import imageProduct_9 from '../public/images/Assets/1x/Logo_TrendM.png'
+import imageProduct_10 from '../public/images/Assets/1x/Logo_VMWare.png'
+import imageProduct_11 from '../public/images/Assets/1x/Logo_Veeam.png'
+import styles from '../styles/product.module.css'
+import { Container, Grid } from '@mui/material'
+import Link from 'next/link'
+import Image from 'next/image'
+import React from 'react'
 const Product: NextPage = () => {
   return (
     <>
@@ -56,7 +56,7 @@ const Product: NextPage = () => {
                 </Link>
               </Grid>
               <Grid md="auto" className={styles.categoryContent}>
-                <Link href="#virtualization">
+                <Link href="#replication-bcs">
                   <a>Replication & BCS</a>
                 </Link>
               </Grid>
@@ -316,7 +316,7 @@ const Product: NextPage = () => {
       </main>
       <Footer />
     </>
-  );
-};
+  )
+}
 
-export default Product;
+export default Product
