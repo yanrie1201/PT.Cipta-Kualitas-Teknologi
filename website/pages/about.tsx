@@ -1,19 +1,41 @@
-import { style } from '@mui/system'
-import type { NextPage } from 'next'
-import Head from 'next/head'
-import { HomeButton } from '../components/button'
-import Footer from '../components/footer'
-import Navbar from '../components/navbar'
-import image1 from '../public/images/Logo/SVG/Logo A.svg'
-import styles from '../styles/about.module.css'
-import { Container, Grid, Paper, Stack, Typography } from '@mui/material'
-import imageSolution_1 from '../public/images/Assets/SVG/Solution_IT.svg'
-import imageSolution_2 from '../public/images/Assets/SVG/Solution_NET.svg'
-import imageSolution_3 from '../public/images/Assets/SVG/Solution_IoT.svg'
+import { style } from "@mui/system";
+import type { NextPage } from "next";
+import Head from "next/head";
+import { HomeButton } from "../components/button";
+import Footer from "../components/footer";
+import Navbar from "../components/navbar";
+import image1 from "../public/images/Logo/SVG/Logo A.svg";
+import styles from "../styles/about.module.css";
+import { Container, Grid, Paper, Stack, Typography } from "@mui/material";
+import imageSolution_1 from "../public/images/Assets/SVG/Solution_IT.svg";
+import imageSolution_2 from "../public/images/Assets/SVG/Solution_NET.svg";
+import imageSolution_3 from "../public/images/Assets/SVG/Solution_IoT.svg";
+import imageClient_1 from "../public/images/Assets/1x/Logo_PouChen.png";
+import imageClient_2 from "../public/images/Assets/1x/Logo_UPH.png";
+import imageClient_3 from "../public/images/Assets/1x/Logo_NikomasGemilang.png";
+import imageClient_4 from "../public/images/Assets/1x/Logo_GSI.png";
+import imageClient_5 from "../public/images/Assets/1x/Logo_IndoKordsa.png";
 
-import Image from 'next/image'
-import { NavbarText } from 'reactstrap'
+import Image from "next/image";
+import { NavbarText } from "reactstrap";
+import Link from "next/link";
+import React from "react";
+import Slider from "react-slick";
 
+const settings = {
+  dots: true,
+  infinite: true,
+  arrows: true,
+  speed: 1000,
+  slidesToShow: 3,
+  focusOnSelect: true,
+  swipeToSlide: true,
+  pauseOnHover: true,
+  autoplay: true,
+  autoplaySpeed: 5000,
+  centerMode: true,
+  centerPadding: "75px",
+};
 const About: NextPage = () => (
   <>
     <Head>
@@ -150,9 +172,87 @@ const About: NextPage = () => (
           </Grid>
         </Container>
       </section>
+      <section className={styles.productSection}>
+        <Container maxWidth="xl">
+          <Grid
+            container
+            justifyContent="center"
+            alignItems="center"
+            className={styles.productContainer}
+          >
+            <Grid md={12} className={styles.productTitle}>
+              Our <span className={styles.colorBlack}>Products</span>
+            </Grid>
+            <Grid md={12} className={styles.productCarousel}>
+              <Slider {...settings}>
+                <div className={styles.productContent}>
+                  <div className={styles.product}>
+                    <div className={styles.productImage}>
+                      <Image src={imageClient_1} />
+                    </div>
+                    <div className={styles.productName}>
+                      <Link href="https://www.pouchen.com/">
+                        <a target="_blank">Pou Chen Group</a>
+                      </Link>
+                    </div>
+                  </div>
+                </div>
+                <div className={styles.productContent}>
+                  <div className={styles.product}>
+                    <div className={styles.productImage}>
+                      <Image src={imageClient_2} />
+                    </div>
+                    <div className={styles.productName}>
+                      <Link href="https://www.uph.edu/">
+                        <a target="_blank">Universitas Pelita Harapan</a>
+                      </Link>
+                    </div>
+                  </div>
+                </div>
+                <div className={styles.productContent}>
+                  <div className={styles.product}>
+                    <div className={styles.productImage}>
+                      <Image src={imageClient_3} />
+                    </div>
+                    <div className={styles.productName}>
+                      <Link href="http://www.pci.co.id/">
+                        <a target="_blank">Nikomas Gemilang</a>
+                      </Link>
+                    </div>
+                  </div>
+                </div>
+                <div className={styles.productContent}>
+                  <div className={styles.product}>
+                    <div className={styles.productImage}>
+                      <Image src={imageClient_4} />
+                    </div>
+                    <div className={styles.productName}>
+                      <Link href="">
+                        <a>Glostar Indonesia</a>
+                      </Link>
+                    </div>
+                  </div>
+                </div>
+                <div className={styles.productContent}>
+                  <div className={styles.product}>
+                    <div className={styles.productImage}>
+                      <Image src={imageClient_5} />
+                    </div>
+                    <div className={styles.productName}>
+                      <Link href="http://www.indokordsa.com/">
+                        <a target="_blank">Indo Kordsa</a>
+                      </Link>
+                    </div>
+                  </div>
+                </div>
+              </Slider>
+            </Grid>
+          </Grid>
+        </Container>
+      </section>
     </main>
     <Footer />
   </>
-)
+);
 
-export default About
+export default About;

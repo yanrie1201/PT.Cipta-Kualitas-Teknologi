@@ -95,3 +95,72 @@
   padding-top: 30px;
   padding-bottom: 10px;
 }
+.productSection {
+  background-color: var(--white);
+  color: var(--theme);
+  cursor: default;
+}
+.productContainer {
+  padding: 150px 200px;
+}
+.productCarousel {
+  margin: 0 auto;
+  border: 0px double var(--theme);
+}
+.productContent {
+  display: block;
+}
+.productTitle {
+  text-align: center;
+  font-size: 48px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.product {
+  padding: 50px 25px;
+}
+.productImage {
+  text-align: center;
+  height: 250px;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+.productName {
+  /* display: none; */
+  font-size: 28px;
+  font-weight: 700;
+  text-align: center;
+  align-items: center;
+}
+/* Flip Card */
+.product {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.75s;
+  transform-style: preserve-3d;
+}
+.productImage,
+.productName {
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+.productName {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotateY(180deg);
+}
+.productContent:hover .product {
+  transform: rotateY(180deg);
+}
+.productcontent {
+  background-color: transparent;
+  perspective: 1000px;
+}
+
+.colorBlack {
+  color: var(--black);
+}

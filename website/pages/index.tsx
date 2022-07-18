@@ -1,30 +1,31 @@
-import type { NextPage } from 'next'
-import Head from 'next/head'
-import { HomeButton } from '../components/button'
-import Footer from '../components/footer'
-import Navbar from '../components/navbar'
-import imageSolution_1 from '../public/images/Assets/SVG/Solution_IT.svg'
-import imageSolution_2 from '../public/images/Assets/SVG/Solution_NET.svg'
-import imageSolution_3 from '../public/images/Assets/SVG/Solution_IoT.svg'
-import imageProduct_1 from '../public/images/Assets/1x/Logo_HP.png'
-import imageProduct_2 from '../public/images/Assets/1x/Logo_H3C.png'
-import imageProduct_3 from '../public/images/Assets/1x/Logo_Dell.png'
-import imageProduct_4 from '../public/images/Assets/1x/Logo_Comvault.png'
-import imageProduct_5 from '../public/images/Assets/1x/Logo_HyperV.png'
-import imageProduct_6 from '../public/images/Assets/1x/Logo_lenovo.png'
-import imageProduct_7 from '../public/images/Assets/1x/Logo_Office.png'
-import imageProduct_8 from '../public/images/Assets/1x/Logo_Sangfor.png'
-import imageProduct_9 from '../public/images/Assets/1x/Logo_TrendM.png'
-import imageProduct_10 from '../public/images/Assets/1x/Logo_VMWare.png'
-import imageProduct_11 from '../public/images/Assets/1x/Logo_Veeam.png'
-import styles from '../styles/home.module.css'
-import { Container, Grid } from '@mui/material'
-import Image from 'next/image'
-import 'slick-carousel/slick/slick.css'
-import 'slick-carousel/slick/slick-theme.css'
-import Link from 'next/link'
-import React from 'react'
-import Slider from 'react-slick'
+import type { NextPage } from "next";
+import Head from "next/head";
+import { HomeButton } from "../components/button";
+import Footer from "../components/footer";
+import Navbar from "../components/navbar";
+import imageSolution_1 from "../public/images/Assets/SVG/Solution_IT.svg";
+import imageSolution_2 from "../public/images/Assets/SVG/Solution_NET.svg";
+import imageSolution_3 from "../public/images/Assets/SVG/Solution_IoT.svg";
+import imageProduct_1 from "../public/images/Assets/1x/Logo_HP.png";
+import imageProduct_2 from "../public/images/Assets/1x/Logo_H3C.png";
+import imageProduct_3 from "../public/images/Assets/1x/Logo_Dell.png";
+import imageProduct_4 from "../public/images/Assets/1x/Logo_Comvault.png";
+import imageProduct_5 from "../public/images/Assets/1x/Logo_HyperV.png";
+import imageProduct_6 from "../public/images/Assets/1x/Logo_lenovo.png";
+import imageProduct_7 from "../public/images/Assets/1x/Logo_Office.png";
+import imageProduct_8 from "../public/images/Assets/1x/Logo_Sangfor.png";
+import imageProduct_9 from "../public/images/Assets/1x/Logo_TrendM.png";
+import imageProduct_10 from "../public/images/Assets/1x/Logo_VMWare.png";
+import imageProduct_11 from "../public/images/Assets/1x/Logo_Veeam.png";
+import imageProduct_12 from "../public/images/Assets/1x/Logo_Lacakio.png";
+import styles from "../styles/home.module.css";
+import { Container, Grid } from "@mui/material";
+import Image from "next/image";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import Link from "next/link";
+import React from "react";
+import Slider from "react-slick";
 const settings = {
   dots: true,
   infinite: true,
@@ -37,8 +38,8 @@ const settings = {
   autoplay: true,
   autoplaySpeed: 5000,
   centerMode: true,
-  centerPadding: '75px',
-}
+  centerPadding: "75px",
+};
 const Home: NextPage = () => {
   return (
     <>
@@ -139,7 +140,7 @@ const Home: NextPage = () => {
                     <div className={styles.categoryAspect}></div>
                     <div
                       className={[styles.categoryBox, styles.categoryHue0].join(
-                        ' '
+                        " "
                       )}
                     >
                       <div className={styles.categoryName}>Hardware</div>
@@ -153,7 +154,7 @@ const Home: NextPage = () => {
                     <div className={styles.categoryAspect}></div>
                     <div
                       className={[styles.categoryBox, styles.categoryHue1].join(
-                        ' '
+                        " "
                       )}
                     >
                       <div className={styles.categoryName}>
@@ -169,7 +170,7 @@ const Home: NextPage = () => {
                     <div className={styles.categoryAspect}></div>
                     <div
                       className={[styles.categoryBox, styles.categoryHue2].join(
-                        ' '
+                        " "
                       )}
                     >
                       <div className={styles.categoryName}>Virtualization</div>
@@ -183,7 +184,7 @@ const Home: NextPage = () => {
                     <div className={styles.categoryAspect}></div>
                     <div
                       className={[styles.categoryBox, styles.categoryHue3].join(
-                        ' '
+                        " "
                       )}
                     >
                       <div className={styles.categoryName}>
@@ -199,7 +200,7 @@ const Home: NextPage = () => {
                     <div className={styles.categoryAspect}></div>
                     <div
                       className={[styles.categoryBox, styles.categoryHue4].join(
-                        ' '
+                        " "
                       )}
                     >
                       <div className={styles.categoryName}>Networking</div>
@@ -213,7 +214,7 @@ const Home: NextPage = () => {
                     <div className={styles.categoryAspect}></div>
                     <div
                       className={[styles.categoryBox, styles.categoryHue5].join(
-                        ' '
+                        " "
                       )}
                     >
                       <div className={styles.categoryName}>Cloud Service</div>
@@ -369,6 +370,18 @@ const Home: NextPage = () => {
                       </div>
                     </div>
                   </div>
+                  <div className={styles.productContent}>
+                    <div className={styles.product}>
+                      <div className={styles.productImage}>
+                        <Image src={imageProduct_12} />
+                      </div>
+                      <div className={styles.productName}>
+                        <Link href="https://lacak.io/">
+                          <a target="_blank">Lacak.io</a>
+                        </Link>
+                      </div>
+                    </div>
+                  </div>
                 </Slider>
               </Grid>
             </Grid>
@@ -377,7 +390,7 @@ const Home: NextPage = () => {
       </main>
       <Footer />
     </>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;
