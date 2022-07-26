@@ -38,6 +38,6 @@ class MailController extends Controller
          
         Mail::to($COMPANY_EMAIL)->send(new Email($mailData));
            
-        return reponse()->json(['success' => 'Email sent successfully'], 200);
+        return response()->json(['success' => 'Email sent successfully'], 200);
     }
 }
