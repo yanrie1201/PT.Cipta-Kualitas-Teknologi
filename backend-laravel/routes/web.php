@@ -13,6 +13,5 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// use App\Http\Controllers\MailController;
+// Route::get('send-mail', [MailController::class, 'index']);

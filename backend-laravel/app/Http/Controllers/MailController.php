@@ -15,13 +15,29 @@ class MailController extends Controller
      */
     public function index(Request $request)
     {
+        $COMPANY_EMAIL = 'xxxandasln@gmail.com';
+        $request->validate([
+            'title' => 'required',
+            'name' => 'required',
+            'description' => 'required',
+            'email' => 'required|email',
+            'phone' => 'required'
+        ]);
         $mailData = [
-            'title' => 'Mail from Backend Laravel',
-            'body' => 'This is for testing email using smtp.'
+            'title' => $request->title,
+            'description' => $request->description,
+            'email' => $request->email,
+            'phone' => $request->phone,
+            'name' => $request->name,
+            // 'title' => 'This is a Dummy Email',
+            // 'description' => 'dummy dummy dummy dummy dummy dummy dummy dummy dummy dummy dummy dummy dummy dummy dummy dummy dummy dummy dummy dummy dummy dummy dummy dummy dummy',
+            // 'email' => 'dummy@example.com',
+            // 'phone' => '08575',
+            // 'name' => 'John Doemmy',
         ];
          
-        Mail::to('your_email@gmail.com')->send(new Email($mailData));
+        Mail::to($COMPANY_EMAIL)->send(new Email($mailData));
            
-        dd("Email is sent successfully.");
+        return reponse()->json(['success' => 'Email sent successfully'], 200);
     }
 }
