@@ -1,26 +1,26 @@
-import { style } from "@mui/system";
-import type { NextPage } from "next";
-import Head from "next/head";
-import { HomeButton } from "../components/button";
-import Footer from "../components/footer";
-import Navbar from "../components/navbar";
-import image1 from "../public/images/Logo/SVG/Logo A.svg";
-import styles from "../styles/about.module.css";
-import { Container, Grid, Paper, Stack, Typography } from "@mui/material";
-import imageSolution_1 from "../public/images/Assets/SVG/Solution_IT.svg";
-import imageSolution_2 from "../public/images/Assets/SVG/Solution_NET.svg";
-import imageSolution_3 from "../public/images/Assets/SVG/Solution_IoT.svg";
-import imageClient_1 from "../public/images/Assets/1x/Logo_PouChen.png";
-import imageClient_2 from "../public/images/Assets/1x/Logo_UPH.png";
-import imageClient_3 from "../public/images/Assets/1x/Logo_NikomasGemilang.png";
-import imageClient_4 from "../public/images/Assets/1x/Logo_GSI.png";
-import imageClient_5 from "../public/images/Assets/1x/Logo_IndoKordsa.png";
+import { style } from '@mui/system'
+import type { NextPage } from 'next'
+import Head from 'next/head'
+import { HomeButton } from '../components/button'
+import Footer from '../components/footer'
+import Navbar from '../components/navbar'
+import image1 from '../public/images/Logo/SVG/Logo A.svg'
+import styles from '../styles/about.module.css'
+import { Container, Grid, Paper, Stack, Typography } from '@mui/material'
+import imageSolution_1 from '../public/images/Assets/SVG/Solution_IT.svg'
+import imageSolution_2 from '../public/images/Assets/SVG/Solution_NET.svg'
+import imageSolution_3 from '../public/images/Assets/SVG/Solution_IoT.svg'
+import imageClient_1 from '../public/images/Assets/1x/Logo_PouChen.png'
+import imageClient_2 from '../public/images/Assets/1x/Logo_UPH.png'
+import imageClient_3 from '../public/images/Assets/1x/Logo_NikomasGemilang.png'
+import imageClient_4 from '../public/images/Assets/1x/Logo_GSI.png'
+import imageClient_5 from '../public/images/Assets/1x/Logo_IndoKordsa.png'
 
-import Image from "next/image";
-import { NavbarText } from "reactstrap";
-import Link from "next/link";
-import React from "react";
-import Slider from "react-slick";
+import Image from 'next/image'
+import { NavbarText } from 'reactstrap'
+import Link from 'next/link'
+import React from 'react'
+import Slider from 'react-slick'
 
 const settings = {
   dots: true,
@@ -34,8 +34,8 @@ const settings = {
   autoplay: true,
   autoplaySpeed: 5000,
   centerMode: true,
-  centerPadding: "75px",
-};
+  centerPadding: '75px',
+}
 const About: NextPage = () => (
   <>
     <Head>
@@ -181,7 +181,7 @@ const About: NextPage = () => (
             className={styles.productContainer}
           >
             <Grid md={12} className={styles.productTitle}>
-              Our <span className={styles.colorBlack}>Products</span>
+              Our <span className={styles.colorBlack}>Clients</span>
             </Grid>
             <Grid md={12} className={styles.productCarousel}>
               <Slider {...settings}>
@@ -253,6 +253,6 @@ const About: NextPage = () => (
     </main>
     <Footer />
   </>
-);
+)
 
-export default About;
+export default About

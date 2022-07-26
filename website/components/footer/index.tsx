@@ -154,7 +154,7 @@ const Footer = () => {
                 </Stack>
                 <Stack direction="row" spacing={1}>
                   <EmailIcon sx={{ color: 'var(--white)' }} fontSize="medium" />
-                  <FooterText>Christian.kangean@Ciptakualitas.co.id</FooterText>
+                  <FooterText>sales@ciptakualitas.co.id</FooterText>
                 </Stack>
               </Stack>
             </Grid>

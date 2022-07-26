@@ -124,7 +124,7 @@ const About: NextPage = () => (
                     Facsimile: +62 21 5289 7399
                   </FooterText>
                   <FooterText fsize="15px" mbottom="0px">
-                    Email: Christian.kangean@Ciptakualitas.co.id
+                    Email: sales@ciptakualitas.co.id
                   </FooterText>
                 </Stack>
                 <iframe
