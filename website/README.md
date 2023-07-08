@@ -2,13 +2,30 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## Getting Started
 
-First, run the development server:
+First, run the development server, install all the modules and then change directory to website:
 
 ```bash
-npm run dev
+yarn install
+cd website
 # or
 yarn dev
 ```
+
+This is the main homepage interface :
+![Alt text](image.png)
+![Alt text](image-1.png)
+![Alt text](image-2.png)
+
+This is the product page interface :
+![Alt text](image-3.png)
+![Alt text](image-4.png)
+
+This is the About page interface :
+![Alt text](image-5.png)
+![Alt text](image-6.png)
+
+This is the Contact page interface:
+![Alt text](image-7.png)
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
