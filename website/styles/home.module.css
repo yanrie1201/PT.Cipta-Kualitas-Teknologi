@@ -2,7 +2,7 @@
   display: block;
 }
 .header {
-  background-image: url("../public/images/Background/server 3.jpeg");
+  background-image: url('../public/images/Background/Server 3.jpeg');
   height: 100vh;
   background-position: center;
   background-repeat: no-repeat;
