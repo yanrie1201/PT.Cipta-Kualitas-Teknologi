@@ -109,6 +109,7 @@ const Contact: NextPage = () => {
                       <CssTextField
                         type="text"
                         label="Full Name"
+                        inputProps={{ minLength: 10 }}
                         {...register(`name`, {
                           required: 'Please enter your name',
                         })}
